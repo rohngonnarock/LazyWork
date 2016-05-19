@@ -1393,3 +1393,7 @@ hr {
     width: 100%;
     z-index: 10000;
 }
+
+.search-bar .box{
+    border: 1px solid #f0f0f0;
+}

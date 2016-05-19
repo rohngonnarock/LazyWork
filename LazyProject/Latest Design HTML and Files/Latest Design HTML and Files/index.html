@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>HOME</title>
 
@@ -13,16 +13,17 @@
     <!--<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
           rel='stylesheet' type='text/css'>-->
 
-    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css"/>
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
     <link href="css/owl.theme.css" rel="stylesheet">
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/datepicker.css" />
+    <link rel="stylesheet" href="css/datepicker.css" />
 
     <link href="css/yamm.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-	<!-- **===================================* Media Query * ========================================  * -->
-   <link rel="stylesheet" type="text/css" media="screen and (min-width: 640px) and (max-width: 991px)" href="css/media/tablet-devices.css"/>
-	<link rel="stylesheet" type="text/css" media="only screen and (max-width: 639px)" href="css/media/mobile.css"/>
+    <link href="css/Site.min.css" rel="stylesheet" />
+    <!-- **===================================* Media Query * ========================================  * -->
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 640px) and (max-width: 991px)" href="css/media/tablet-devices.css" />
+    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 639px)" href="css/media/mobile.css" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]
@@ -31,859 +32,741 @@
     <![endif]-->
 </head>
 <body>
-<!-- Static navbar -->
-<div id="sticky-anchor"></div>
-<div  id="">
-<nav class="navbar navbar-default ">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><img src="images/logo.png"/> </a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-
-            <ul class="nav navbar-nav navbar-right login-nav">
-
-                <li><a href="#" class="login-btn">login</a></li>
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div>
-</nav>
-<div class="container">
-
-    <h1>Enter summer with<br/>
-        <span class="color_red">refreshing</span> rates</h1>
-    <div class="dash"></div>
-</div>
-</div>
-<div class="container">
-    <div class="filter">
-        <ul class="nav nav-tabs filters-tabs">
-            <li class="active"><a data-toggle="tab" href="#menu">ROUND TRIP</a></li>
-            <li><a data-toggle="tab" href="#menu1">ONE WAY</a></li>
-            <li><a data-toggle="tab" href="#menu2">MULTI CITY</a></li>
-        </ul>
-
-        <div class="tab-content">
-            <div id="menu" class="tab-pane fade in active">
-                <form id='myform' method='POST' action='#'>
-                <div class="filter1">
-                    <div class="row">
-                        <div class="col-md-1 col-sm-1 col-xs-6 box1 ">
-                            <div class="plaine">
-                                <input type="checkbox" id="c1" name="cc" />
-                                <label for="c1"><span></span></label>
-                                <div class="thumbnail" > 
-                                    <img src="images/plane.jpg" />
-                                </div>
-                                <div class="title">Flight</div>
-                            </div>
-                        </div>
-                        <div class="col-md-1 col-sm-1 col-xs-6 box1">
-                            <div class="plaine">
-                                <input type="checkbox" id="c2" name="cc" />
-                                <label for="c2"><span></span></label>
-                                <div class="thumbnail">
-                                    <img src="images/building.jpg"/>
-                                </div>
-                                <div class="title">Accommodation</div>
-                            </div>
-                        </div>
-                        <div class="col-md-1 col-sm-1 col-xs-6 box1 ">
-                            <div class="plaine">
-                                <input type="checkbox" id="c3" name="cc" />
-                                <label for="c3"><span></span></label>
-                                <div class="thumbnail">
-                                    <img src="images/cars.png"/>
-                                </div>
-                                <div class="title">Cars</div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-12 enter-price">
-
-                                <div class="row row-padding">
-                                    <div class="col-md-4 col-sm-4 col-xs-4">
-                                        <div class="row">
-                                            <div class="col-xs-6">
-                                               <div class="dollaer"> $</div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <input type="button" field="" class="qtyplus" value=" ">
-                                                <input type="button" field="" class="qtyminus" value=" ">
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="col-md-8 col-sm-8 col-xs-8">
-                                        <input type="text" class="form-control" placeholder="Enter budget" name="quantity">
-                                    </div>
-                                </div>
-                        </div>
-                        
-                        <div class="col-md-1 col-sm-4 col-xs-12 select-month border_right">
-                            <div class="row">
-                                <div class="col-md-1 col-sm-4 col-xs-3">
-                                    <img src="images/user.jpg" class="icon"/>
-                                </div>
-                                <div class="col-md-11 col-sm-8 col-xs-9 travel">
-                                   <select class="form-control" >
-                                       <option>01</option>
-                                       <option>02</option>
-                                       <option>03</option>
-                                       <option>04</option>
-                                       <option>05</option>
-                                       <option>06</option>
-                                       <option>07</option>
-                                       <option>08</option>
-                                       <option>09</option>
-                                       <option>10</option>
-                                       <option>11</option>
-                                       <option>12</option>
-                                   </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-12 select-month ">
-                            <div class="row border_right">
-                                <div class="col-md-2 col-sm-4 col-xs-3">
-                                    <img src="images/marker.jpg" class="icon"/>
-                                </div>
-                                <div class="col-md-10 col-sm-8 col-xs-9">
-                                    <input type="text" class="form-control" placeholder="Enter city from">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-12 select-month ">
-                            <div class="row border_right">
-                                <div class="col-md-2 col-sm-4 col-xs-3">
-                                    <img src="images/marker.jpg" class="icon"/>
-                                </div>
-                                <div class="col-md-10 col-sm-8 col-xs-9">
-                                    <input type="text" class="form-control" placeholder="Enter destination">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-12 select-month secondlast-col">
-                            <div class="row border_right">
-                                <div class="col-md-3 col-sm-4 col-xs-3">
-                                    <img src="images/ca.jpg" class="icon"/>
-                                </div>
-                                <div class="col-md-9 col-sm-8 col-xs-9">
-                                    <input type="text" class="form-control date-picker" placeholder="Depart date" id="date-picker-1" >
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-12 select-month last-col">
-                            <div class="row border_right">
-                                <div class="col-md-3 col-sm-2 col-xs-3">
-                                    <img src="images/ca.jpg" class="icon"/>
-                                </div>
-                                <div class="col-md-9 col-sm-10 col-xs-9">
-                                    <input type="text" class="form-control date-picker active" placeholder="Return date" id="date-picker-2" value="">
-                                </div>
-                            </div>
-                        </div>
+    <div style="overflow-x:hidden;">
+        <!-- Static navbar -->
+        <div id="sticky-anchor"></div>
+        <div id="">
+            <nav class="navbar navbar-default ">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><img src="images/logo.png" /> </a>
                     </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+
+                        <ul class="nav navbar-nav navbar-right login-nav">
+
+                            <li><a href="#" class="login-btn">login</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
                 </div>
-                </form>
-                <div class="row buton">
-        			<div class="col-md-12">
-                        <div class="button_area">
-                            <button class="btn-danger search-book">Search & Book</button>
-                        </div>
-        			</div>
-    			</div>
-            </div>
-            <div id="menu1" class="tab-pane fade">
-                <div class="filter1">
-                    <div class="row">
-                        <div class="col-md-1 col-sm-1 col-xs-6 box2 ">
-                            <div class="plaine">
-                                <input type="checkbox" id="s1" name="cc" />
-                                <label for="s1"><span></span></label>
-                                <div class="thumbnail" > 
-                                    <img src="images/plane.jpg"/>
-                                </div>
-                                <div class="title">Flight</div>
-                            </div>
-                        </div>
-                        <div class="col-md-1 col-sm-1 col-xs-6 box2">
-                            <div class="plaine">
-                                <input type="checkbox" id="s2" name="cc" />
-                                <label for="s2"><span></span></label>
-                                <div class="thumbnail">
-                                    <img src="images/building.jpg"/>
-                                </div>
-                                <div class="title">Accommodation</div>
-                            </div>
-                        </div>
-                        <div class="col-md-1 col-sm-1 col-xs-6 box2 ">
-                            <div class="plaine">
-                                <input type="checkbox" id="s3" name="cc" />
-                                <label for="s3"><span></span></label>
-                                <div class="thumbnail">
-                                    <img src="images/cars.png"/>
-                                </div>
-                                <div class="title">Cars</div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-12 enter-price">
+            </nav>
+            <div class="container" id="SummerBanner">
 
-                                <div class="row row-padding">
-                                    <div class="col-md-4 col-sm-4 col-xs-4">
-                                        <div class="row">
-                                            <div class="col-xs-6">
-                                               <div class="dollaer"> $</div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <input type="button" field="" class="qtyplus" value=" ">
-                                                <input type="button" field="" class="qtyminus" value=" ">
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="col-md-8 col-sm-8 col-xs-8">
-                                        <input type="text" class="form-control" placeholder="Enter budget" name="quantity">
-                                    </div>
-                                </div>
-                        </div>
-                        
-                        <div class="col-md-1 col-sm-4 col-xs-12 select-month border_right">
-                            <div class="row">
-                                <div class="col-md-1 col-sm-4 col-xs-3">
-                                    <img src="images/user.jpg" class="icon"/>
-                                </div>
-                                <div class="col-md-11 col-sm-8 col-xs-9 travel">
-                                   <select class="form-control">
-                                       <option>01</option>
-                                       <option>02</option>
-                                       <option>03</option>
-                                       <option>04</option>
-                                       <option>05</option>
-                                       <option>06</option>
-                                       <option>07</option>
-                                       <option>08</option>
-                                       <option>09</option>
-                                       <option>10</option>
-                                       <option>11</option>
-                                       <option>12</option>
-                                   </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-12 select-month ">
-                            <div class="row border_right">
-                                <div class="col-md-2 col-sm-4 col-xs-3">
-                                    <img src="images/marker.jpg" class="icon"/>
-                                </div>
-                                <div class="col-md-10 col-sm-8 col-xs-9">
-                                    <input type="text" class="form-control" placeholder="Enter city from">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-12 select-month ">
-                            <div class="row border_right">
-                                <div class="col-md-2 col-sm-4 col-xs-3">
-                                    <img src="images/marker.jpg" class="icon"/>
-                                </div>
-                                <div class="col-md-10 col-sm-8 col-xs-9">
-                                    <input type="text" class="form-control" placeholder="Enter destination">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-12 select-month second-col">
-                            <div class="row border_right">
-                                <div class="col-md-3 col-sm-4 col-xs-3">
-                                    <img src="images/ca.jpg" class="icon"/>
-                                </div>
-                                <div class="col-md-9 col-sm-8 col-xs-9">
-                                    <input type="text" class="form-control date-picker" placeholder="Depart date" id="date-picker-1" >
-                                </div>
-                            </div>
-                        </div>
-                  
-                    </div>
-                </div>
-                <div class="row buton">
-        			<div class="col-md-12">
-                        <div class="button_area">
-                            <button class="btn-danger search-book">Search & Book</button>
-                        </div>
-        			</div>
-    			</div>
-            </div>
-            <div id="menu2" class="tab-pane fade">
-                <div class="filter1"  id="top">
-                    <div class="row">
-                        <div class="col-md-1 col-sm-1 col-xs-6 box2 ">
-                            <div class="plaine">
-                                <input type="checkbox" id="m1" name="cc" />
-                                <label for="m1"><span></span></label>
-                                <div class="thumbnail" > 
-                                    <img src="images/plane.jpg"/>
-                                </div>
-                                <div class="title">Flight</div>
-                            </div>
-                        </div>
-                        <div class="col-md-1 col-sm-1 col-xs-6 box2">
-                            <div class="plaine">
-                                <input type="checkbox" id="m2" name="cc" />
-                                <label for="m2"><span></span></label>
-                                <div class="thumbnail">
-                                    <img src="images/building.jpg"/>
-                                </div>
-                                <div class="title">Accommodation</div>
-                            </div>
-                        </div>
-                        <div class="col-md-1 col-sm-1 col-xs-6 box2 ">
-                            <div class="plaine">
-                                <input type="checkbox" id="m3" name="cc" />
-                                <label for="m3"><span></span></label>
-                                <div class="thumbnail">
-                                    <img src="images/cars.png"/>
-                                </div>
-                                <div class="title">Cars</div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-12 enter-price">
-
-                                <div class="row row-padding">
-                                    <div class="col-md-4 col-sm-4 col-xs-4">
-                                        <div class="row">
-                                            <div class="col-xs-6">
-                                               <div class="dollaer"> $</div>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <input type="button" field="" class="qtyplus" value=" ">
-                                                <input type="button" field="" class="qtyminus" value=" ">
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="col-md-8 col-sm-8 col-xs-8">
-                                        <input type="text" class="form-control" placeholder="Enter budget" name="quantity">
-                                    </div>
-                                </div>
-                        </div>
-                        
-                        <div class="col-md-1 col-sm-4 col-xs-12 select-month border_right">
-                            <div class="row">
-                                <div class="col-md-1 col-sm-4 col-xs-3">
-                                    <img src="images/user.jpg" class="icon"/>
-                                </div>
-                                <div class="col-md-11 col-sm-8 col-xs-9 travel">
-                                   <select class="form-control">
-                                       <option>01</option>
-                                       <option>02</option>
-                                       <option>03</option>
-                                       <option>04</option>
-                                       <option>05</option>
-                                       <option>06</option>
-                                       <option>07</option>
-                                       <option>08</option>
-                                       <option>09</option>
-                                       <option>10</option>
-                                       <option>11</option>
-                                       <option>12</option>
-                                   </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-12 select-month ">
-                            <div class="row border_right">
-                                <div class="col-md-2 col-sm-4 col-xs-3">
-                                    <img src="images/marker.jpg" class="icon"/>
-                                </div>
-                                <div class="col-md-10 col-sm-8 col-xs-9">
-                                    <input type="text" class="form-control" placeholder="Enter city from">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-12 select-month ">
-                            <div class="row border_right">
-                                <div class="col-md-2 col-sm-4 col-xs-3">
-                                    <img src="images/marker.jpg" class="icon"/>
-                                </div>
-                                <div class="col-md-10 col-sm-8 col-xs-9">
-                                    <input type="text" class="form-control" placeholder="Enter destination">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-12 select-month second-col">
-                            <div class="row border_right">
-                                <div class="col-md-3 col-sm-4 col-xs-3">
-                                    <img src="images/ca.jpg" class="icon"/>
-                                </div>
-                                <div class="col-md-9 col-sm-8 col-xs-9">
-                                    <input type="text" class="form-control date-picker" placeholder="Depart date" id="date-picker-1" >
-                                </div>
-                            </div>
-                        </div>
-                        <!--<div class="col-md-2 col-sm-4 col-xs-12 select-month last-col">
-                            <div class="row border_right multi">
-                                <!--<div class="col-md-2 col-sm-4 col-xs-3">
-                                    <img src="images/ca.jpg"/>
-                                </div>
-                                
-                                <div class="col-md-10 col-sm-8 col-xs-9">
-                                    <input type="text" class="form-control date-picker" placeholder="Return date" id="date-picker-2">
-                                </div>
-                                -->
-                               <!-- <a href="#" class="addbtn"><i class="fa fa-plus"></i></a><a href="javascript:void(0);" onclick="removefunction()" ><i class="fa fa-minus"></i></a>
-                            </div>
-                        </div>-->
-                    </div>
-                    
-                </div>
-                <div id="Content"></div>
-                <div class="row buton">
-        			<div class="col-md-12">
-                    	<div class="col-md-3">
-                    		<button type="button" class="btn btn-default addbtn">Add More</button>
-                     	</div>
-                        <div class="col-md-6">
-                        	<div class="button_area1">
-                            <button class="btn-danger search-book">Search & Book</button>
-                        </div>
-                        </div>
-        			</div>
-    			</div>
+                <h1>
+                    Enter summer with<br />
+                    <span class="color_red">refreshing</span> rates
+                </h1>
+                <div class="dash"></div>
             </div>
         </div>
-    </div>
-    
-</div>
-<div class="separater-img">
-    <img src="images/images.png"/>
-</div>
-<div class="gypsy">
-    <section class="white-layer">
         <div class="container">
-            <h1>La<span class="color_red">z</span>y Gypsy</h1>
-            <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol uptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <div class="about-services">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="service_box">
-                            <div class="thumbnail">
-                                <img src="images/icon.png"/>
+            <div class="filter">
+                <ul class="nav nav-tabs filters-tabs">
+                    <li class="active"><a data-toggle="tab" href="#menu">ROUND TRIP</a></li>
+                    <li><a data-toggle="tab" href="#menu1">ONE WAY</a></li>
+                    <li><a data-toggle="tab" href="#menu2">MULTI CITY</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="menu" class="tab-pane fade in active">
+                        <form id='myform' method='POST' action='#'>
+                            <div class="filter1">
+                                <div class="row search-bar">
+                                    <div class="col-md-2 group-B">
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-1 col-xs-4 box check-chkbx">
+                                                <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
+                                                    <input id="checkbox01" type="checkbox" class="styled" checked="">
+                                                    <label for="checkbox01" class="ico-plane"> <img src="images/spacer.png"> </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-1 col-xs-4 box check-chkbx">
+                                                <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
+                                                    <input id="checkbox02" type="checkbox" class="styled" checked="">
+                                                    <label for="checkbox02" class="ico-hotel"> <img src="images/spacer.png"> </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-1 col-xs-4 box check-chkbx">
+                                                <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
+                                                    <input id="checkbox03" type="checkbox" class="styled" checked="">
+                                                    <label for="checkbox03" class="ico-car"> <img src="images/spacer.png"> </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="group-C col-md-3 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-md-8 col-sm-4 col-xs-6 enter-price">
+                                                <div class="row ">
+                                                    <div class="col-md-4 col-sm-4 col-xs-5 padZero">
+                                                        <div class="row marginTop7 ">
+                                                            <div class="col-md-6 col-xs-6">
+                                                                <div class="dollaer"> $</div>
+                                                            </div>
+                                                            <div class="row col-md-6 col-xs-6 padLeftZero">
+                                                                <input type="button" field="" class="qtyplus" value=" ">
+                                                                <input type="button" field="" class="qtyminus" value=" ">
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-md-8  col-xs-7">
+                                                        <input type="text" class="form-control" placeholder="Enter budget" name="quantity">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4 col-xs-6 select-month border_right">
+                                                <div class="row">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon" id="basic-addon1"><img src="images/user.jpg" /></span>
+                                                        <div class="dropdown" aria-describedby="basic-addon1">
+
+                                                            <div class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+                                                                01
+                                                                <span class="caret"></span>
+                                                            </div>
+                                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                                <li><a class="col-md-8" href="#">Adults (18-64)</a><input type="number" value="18" min="1" step="1" class="row col-md-4 numberField" /></li>
+                                                                <li><a class="col-md-8" href="#">Seniors (65+)</a><input type="number" value="65" min="1" step="1" class="row col-md-4 numberField" /></li>
+                                                                <li><a class="col-md-8" href="#">Children (&lt;1-17)</a><input type="number" value="14" min="1" step="1" class="row col-md-4 numberField" /></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="group-D col-md-4">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-4 col-xs-6 select-month ">
+                                                <div class="row border_right">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon" id="addonDest2"><img src="images/marker.jpg" /></span>
+                                                        <input type="text" class="form-control" aria-describedby="addonDest2" placeholder="Enter city from">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-4 col-xs-6 select-month ">
+                                                <div class="row border_right">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon" id="addonDest2"><img src="images/marker.jpg" /></span>
+                                                        <input type="text" class="form-control" aria-describedby="addonDest2" placeholder="Enter destination">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="group-E col-md-3">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-4 col-xs-6 select-month ">
+                                                <div class="row border_right">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon" id="addonDatePicker1"><img src="images/ca.jpg" /></span>
+                                                        <input type="text" class="form-control date-picker" aria-describedby="addonDatePicker1" placeholder="Depart date" id="date-picker-1" value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-4 col-xs-6 select-month ">
+                                                <div class="row border_right">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon" id="addonDatePicker2"><img src="images/ca.jpg" /></span>
+                                                        <input type="text" class="form-control date-picker active" aria-describedby="addonDatePicker2" placeholder="Return date" id="date-picker-2" value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
-                            <h3>Restuarant &
-                                Banquets</h3>
-                            <p>
-                                Proin iaculis purus consequat sem cure digni ssim. Donec porttitora  suscipit aenean rhoncus posuere odio in porttitora  tincidunt rhoncus .
-                            </p>
+                        </form>
+                        <div class="row buton">
+                            <div class="col-md-12">
+                                <div class="button_area">
+                                    <button class="btn-danger search-book">Search & Book</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="service_box">
-                            <div class="thumbnail">
-                                <img src="images/icon.png"/>
+                    <div id="menu1" class="tab-pane fade">
+                        <div class="filter1">
+                            <div class="row search-bar">
+                                <div class="col-md-3 group-B">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-1 col-xs-4 box check-chkbx">
+                                            <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
+                                                <input id="checkbox04" type="checkbox" class="styled" checked="">
+                                                <label for="checkbox04" class="ico-plane"> <img src="images/spacer.png"> </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-1 col-xs-4 box check-chkbx">
+                                            <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
+                                                <input id="checkbox05" type="checkbox" class="styled" checked="">
+                                                <label for="checkbox05" class="ico-hotel"> <img src="images/spacer.png"> </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-1 col-xs-4 box check-chkbx">
+                                            <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
+                                                <input id="checkbox06" type="checkbox" class="styled" checked="">
+                                                <label for="checkbox06" class="ico-car"> <img src="images/spacer.png"> </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="group-C col-md-3 col-xs-12">
+                                    <div class="row">
+                                        <div class="col-md-8 col-sm-4 col-xs-6 enter-price">
+                                            <div class="row ">
+                                                <div class="col-md-4 col-sm-4 col-xs-5 padZero">
+                                                    <div class="row marginTop7 ">
+                                                        <div class="col-md-6 col-xs-6">
+                                                            <div class="dollaer"> $</div>
+                                                        </div>
+                                                        <div class="row col-md-6 col-xs-6 padLeftZero">
+                                                            <input type="button" field="" class="qtyplus" value=" ">
+                                                            <input type="button" field="" class="qtyminus" value=" ">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-8  col-xs-7">
+                                                    <input type="text" class="form-control" placeholder="Enter budget" name="quantity">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 col-xs-6 select-month border_right">
+                                            <div class="row">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon" id="basic-addon1"><img src="images/user.jpg" /></span>
+                                                    <div class="dropdown" aria-describedby="basic-addon1">
+
+                                                        <div class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+                                                            01
+                                                            <span class="caret"></span>
+                                                        </div>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                            <li><a class="col-md-8" href="#">Adults (18-64)</a><input type="number" value="18" min="1" step="1" class="row col-md-4 numberField" /></li>
+                                                            <li><a class="col-md-8" href="#">Seniors (65+)</a><input type="number" value="65" min="1" step="1" class="row col-md-4 numberField" /></li>
+                                                            <li><a class="col-md-8" href="#">Children (&lt;1-17)</a><input type="number" value="14" min="1" step="1" class="row col-md-4 numberField" /></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="group-D col-md-4">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-4 col-xs-6 select-month ">
+                                            <div class="row border_right">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon" id="addonDest2"><img src="images/marker.jpg" /></span>
+                                                    <input type="text" class="form-control" aria-describedby="addonDest2" placeholder="Enter city from">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-4 col-xs-6 select-month ">
+                                            <div class="row border_right">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon" id="addonDest2"><img src="images/marker.jpg" /></span>
+                                                    <input type="text" class="form-control" aria-describedby="addonDest2" placeholder="Enter destination">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="group-E col-md-2">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-4 col-xs-6 select-month ">
+                                            <div class="row border_right">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon" id="addonDatePicker1"><img src="images/ca.jpg" /></span>
+                                                    <input type="text" class="form-control date-picker" aria-describedby="addonDatePicker1" placeholder="Depart date" id="date-picker-1" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
-                            <h3>Restuarant &
-                                Banquets</h3>
-                            <p>
-                                Proin iaculis purus consequat sem cure digni ssim. Donec porttitora  suscipit aenean rhoncus posuere odio in porttitora  tincidunt rhoncus .
-                            </p>
+                        </div>
+                        <div class="row buton">
+                            <div class="col-md-12">
+                                <div class="button_area">
+                                    <button class="btn-danger search-book">Search & Book</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="service_box">
-                            <div class="thumbnail">
-                                <img src="images/icon.png"/>
+                    <div id="menu2" class="tab-pane fade">
+                        <div class="filter1">
+                            <div class="row search-bar">
+                                <div class="col-md-3 group-B">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-1 col-xs-4 box check-chkbx">
+                                            <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
+                                                <input id="checkbox07" type="checkbox" class="styled" checked="">
+                                                <label for="checkbox07" class="ico-plane"> <img src="images/spacer.png"> </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-1 col-xs-4 box check-chkbx">
+                                            <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
+                                                <input id="checkbox08" type="checkbox" class="styled" checked="">
+                                                <label for="checkbox08" class="ico-hotel"> <img src="images/spacer.png"> </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-1 col-xs-4 box check-chkbx">
+                                            <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
+                                                <input id="checkbox09" type="checkbox" class="styled" checked="">
+                                                <label for="checkbox09" class="ico-car"> <img src="images/spacer.png"> </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="group-C col-md-3 col-xs-12">
+                                    <div class="row">
+                                        <div class="col-md-8 col-sm-4 col-xs-6 enter-price">
+                                            <div class="row ">
+                                                <div class="col-md-4 col-sm-4 col-xs-5 padZero">
+                                                    <div class="row marginTop7 ">
+                                                        <div class="col-md-6 col-xs-6">
+                                                            <div class="dollaer"> $</div>
+                                                        </div>
+                                                        <div class="row col-md-6 col-xs-6 padLeftZero">
+                                                            <input type="button" field="" class="qtyplus" value=" ">
+                                                            <input type="button" field="" class="qtyminus" value=" ">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-8  col-xs-7">
+                                                    <input type="text" class="form-control" placeholder="Enter budget" name="quantity">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 col-xs-6 select-month border_right">
+                                            <div class="row">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon" id="basic-addon1"><img src="images/user.jpg" /></span>
+                                                    <div class="dropdown" aria-describedby="basic-addon1">
+
+                                                        <div class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+                                                            01
+                                                            <span class="caret"></span>
+                                                        </div>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                            <li><a class="col-md-8" href="#">Adults (18-64)</a><input type="number" value="18" min="1" step="1" class="row col-md-4 numberField" /></li>
+                                                            <li><a class="col-md-8" href="#">Seniors (65+)</a><input type="number" value="65" min="1" step="1" class="row col-md-4 numberField" /></li>
+                                                            <li><a class="col-md-8" href="#">Children (&lt;1-17)</a><input type="number" value="14" min="1" step="1" class="row col-md-4 numberField" /></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="group-D col-md-4">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-4 col-xs-6 select-month ">
+                                            <div class="row border_right">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon" id="addonDest2"><img src="images/marker.jpg" /></span>
+                                                    <input type="text" class="form-control" aria-describedby="addonDest2" placeholder="Enter city from">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-4 col-xs-6 select-month ">
+                                            <div class="row border_right">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon" id="addonDest2"><img src="images/marker.jpg" /></span>
+                                                    <input type="text" class="form-control" aria-describedby="addonDest2" placeholder="Enter destination">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="group-E col-md-2">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-4 col-xs-6 select-month ">
+                                            <div class="row border_right">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon" id="addonDatePicker1"><img src="images/ca.jpg" /></span>
+                                                    <input type="text" class="form-control date-picker" aria-describedby="addonDatePicker1" placeholder="Depart date" id="date-picker-1" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
-                            <h3>Restuarant &
-                                Banquets</h3>
-                            <p>
-                                Proin iaculis purus consequat sem cure digni ssim. Donec porttitora  suscipit aenean rhoncus posuere odio in porttitora  tincidunt rhoncus .
-                            </p>
                         </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="service_box">
-                            <div class="thumbnail">
-                                <img src="images/icon.png"/>
+                        <div id="Content"></div>
+                        <div class="row buton">
+                            <div class="col-md-12">
+                                <div class="col-md-3">
+                                    <button type="button" class="btn btn-default addbtn">Add More</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="button_area1">
+                                        <button class="btn-danger search-book">Search & Book</button>
+                                    </div>
+                                </div>
                             </div>
-                            <h3>Restuarant &
-                                Banquets</h3>
-                            <p>
-                                Proin iaculis purus consequat sem cure digni ssim. Donec porttitora  suscipit aenean rhoncus posuere odio in porttitora  tincidunt rhoncus .
-                            </p>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
-    </section>
-
-
-</div>
-<section class="update-section">
-    <div class="container">
-        <h2><img src="images/h2icon.png"/> NEWS UPDATES</h2>
-        <div class="row">
-            <div class="col-md-4 col-sm-4">
-                <div class="update_box">
-                    <div class="thumbnail">
-                        <img src="images/img.jpg"/>
-                    </div>
-                    <h3>News Title 1</h3>
-                    <p>
-                        Proin iaculis purus consequat sem cure digni ssim. Donec porttitora  suscipit aenean rhoncus posuere odio in porttitora  tincidunt rhoncus .
-
-
-                    </p>
-                    <a href="#"> Read More</a>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-4">
-                <div class="update_box">
-                    <div class="thumbnail">
-                        <img src="images/img.jpg"/>
-                    </div>
-                    <h3>News Title 1</h3>
-                    <p>
-                        Proin iaculis purus consequat sem cure digni ssim. Donec porttitora  suscipit aenean rhoncus posuere odio in porttitora  tincidunt rhoncus .
-
-
-                    </p>
-                    <a href="#"> Read More</a>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-4">
-                <div class="update_box">
-                    <div class="thumbnail">
-                        <img src="images/img.jpg"/>
-                    </div>
-                    <h3>News Title 1</h3>
-                    <p>
-                        Proin iaculis purus consequat sem cure digni ssim. Donec porttitora  suscipit aenean rhoncus posuere odio in porttitora  tincidunt rhoncus .
-
-
-                    </p>
-                    <a href="#"> Read More</a>
-                </div>
-            </div>
+        <div class="separater-img">
+            <img src="images/images.png" />
         </div>
-    </div>
-</section>
-<footer>
-    <div class="footer-primary">
-        <div class="container">
+        <div class="gypsy">
+            <section class="white-layer">
+                <div class="container">
+                    <h1>La<span class="color_red">z</span>y Gypsy</h1>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol uptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <div class="about-services">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="service_box">
+                                    <div class="thumbnail">
+                                        <img src="images/icon.png" />
+                                    </div>
+                                    <h3>
+                                        Restuarant &
+                                        Banquets
+                                    </h3>
+                                    <p>
+                                        Proin iaculis purus consequat sem cure digni ssim. Donec porttitora  suscipit aenean rhoncus posuere odio in porttitora  tincidunt rhoncus .
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="service_box">
+                                    <div class="thumbnail">
+                                        <img src="images/icon.png" />
+                                    </div>
+                                    <h3>
+                                        Restuarant &
+                                        Banquets
+                                    </h3>
+                                    <p>
+                                        Proin iaculis purus consequat sem cure digni ssim. Donec porttitora  suscipit aenean rhoncus posuere odio in porttitora  tincidunt rhoncus .
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="service_box">
+                                    <div class="thumbnail">
+                                        <img src="images/icon.png" />
+                                    </div>
+                                    <h3>
+                                        Restuarant &
+                                        Banquets
+                                    </h3>
+                                    <p>
+                                        Proin iaculis purus consequat sem cure digni ssim. Donec porttitora  suscipit aenean rhoncus posuere odio in porttitora  tincidunt rhoncus .
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="service_box">
+                                    <div class="thumbnail">
+                                        <img src="images/icon.png" />
+                                    </div>
+                                    <h3>
+                                        Restuarant &
+                                        Banquets
+                                    </h3>
+                                    <p>
+                                        Proin iaculis purus consequat sem cure digni ssim. Donec porttitora  suscipit aenean rhoncus posuere odio in porttitora  tincidunt rhoncus .
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+        <section class="update-section">
             <div class="container">
-                <div class="col-md-5 col-sm-6">
+                <h2><img src="images/h2icon.png" /> NEWS UPDATES</h2>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="update_box">
+                            <div class="thumbnail">
+                                <img src="images/img.jpg" />
+                            </div>
+                            <h3>News Title 1</h3>
+                            <p>
+                                Proin iaculis purus consequat sem cure digni ssim. Donec porttitora  suscipit aenean rhoncus posuere odio in porttitora  tincidunt rhoncus .
 
-                    <h2> Lazy Gypsy </h2>
 
-                    <p>
-                        Proin iaculis purus consequat sem cure digni ssim.<br/> Donec porttitora suscipit aenean rhoncus
-                        posuer<br/>e odio in porttitora tincidunt rhoncus .</p>
+                            </p>
+                            <a href="#"> Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="update_box">
+                            <div class="thumbnail">
+                                <img src="images/img.jpg" />
+                            </div>
+                            <h3>News Title 1</h3>
+                            <p>
+                                Proin iaculis purus consequat sem cure digni ssim. Donec porttitora  suscipit aenean rhoncus posuere odio in porttitora  tincidunt rhoncus .
+
+
+                            </p>
+                            <a href="#"> Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="update_box">
+                            <div class="thumbnail">
+                                <img src="images/img.jpg" />
+                            </div>
+                            <h3>News Title 1</h3>
+                            <p>
+                                Proin iaculis purus consequat sem cure digni ssim. Donec porttitora  suscipit aenean rhoncus posuere odio in porttitora  tincidunt rhoncus .
+
+
+                            </p>
+                            <a href="#"> Read More</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-2 col-sm-2">
-                    <h3> about us </h3>
-                    <ul class="footer-links">
-
-
-                        <li><a href="#"> Layzy Gypsy</a></li>
-                        <li><a href="#">Our Team</a></li>
-                        <li><a href="#">Careers</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 col-sm-4">
-                    <h3> Contact us </h3>
-                    <ul class="contact-list">
-
-
-                        <li><a href="#"><i class="fa fa-envelope"></i>hello@lazygypsy.com</a></li>
-                        <li><a href="#"><i class="fa fa-mobile"></i> +44087536920</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 col-sm-11">
-
-                    <ul class="footer-icons pull-right">
-
-
-                        <li><a href="#"> <i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    </ul>
-                </div>
-
             </div>
-        </div>
+        </section>
+        <footer>
+            <div class="footer-primary">
+                <div class="container">
+                    <div class="container">
+                        <div class="col-md-5 col-sm-6">
+
+                            <h2> Lazy Gypsy </h2>
+
+                            <p>
+                                Proin iaculis purus consequat sem cure digni ssim.<br /> Donec porttitora suscipit aenean rhoncus
+                                posuer<br />e odio in porttitora tincidunt rhoncus .
+                            </p>
+                        </div>
+                        <div class="col-md-2 col-sm-2">
+                            <h3> about us </h3>
+                            <ul class="footer-links">
+
+
+                                <li><a href="#"> Layzy Gypsy</a></li>
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <h3> Contact us </h3>
+                            <ul class="contact-list">
+
+
+                                <li><a href="#"><i class="fa fa-envelope"></i>hello@lazygypsy.com</a></li>
+                                <li><a href="#"><i class="fa fa-mobile"></i> +44087536920</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-11">
+
+                            <ul class="footer-icons pull-right">
+
+
+                                <li><a href="#"> <i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-secondry">
+                <div class="container">
+                    <p>© Copyright 2016, Lazy Gypsy</p>
+                </div>
+            </div>
+        </footer>
+        <div style="display:none;" id="counterDiv">100</div>
     </div>
-    <div class="footer-secondry">
-        <div class="container">
-            <p>© Copyright 2016, Lazy Gypsy</p>
-        </div>
-    </div>
-</footer>
-<script src="js/jquery.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-<script type="text/javascript">function sticky_relocate() {
-    var window_top = $(window).scrollTop();
-    var div_top = $('#sticky-anchor').offset().top;
-    if (window_top > div_top) {
-        $('#sticky').addClass('stick');
-        $('#sticky-anchor').height($('#sticky').outerHeight());
-    } else {
-        $('#sticky').removeClass('stick');
-        $('#sticky-anchor').height(0);
-    }
-}
-
-$(function() {
-    $(window).scroll(sticky_relocate);
-    sticky_relocate();
-});
-
-var dir = 1;
-var MIN_TOP = 200;
-var MAX_TOP = 350;
-
-function autoscroll() {
-    var window_top = $(window).scrollTop() + dir;
-    if (window_top >= MAX_TOP) {
-        window_top = MAX_TOP;
-        dir = -1;
-    } else if (window_top <= MIN_TOP) {
-        window_top = MIN_TOP;
-        dir = 1;
-    }
-    $(window).scrollTop(window_top);
-    window.setTimeout(autoscroll, 100);
-}
-</script>
-<script>
-$(function () {
-  $('.addbtn').on('click', function () {
-	   $('<div class="filter1" id="nested">' +
-                    '<div class="row">' +
-                        '<div class="col-md-1 col-sm-1 col-xs-6 box2 ">' +
-                           ' <div class="plaine">' +
-                               ' <input type="checkbox" id="m4" name="cc" />' +
-                               ' <label for="m4"><span></span></label>' +
-                                '<div class="thumbnail" > ' +
-                                   ' <img src="images/plane.jpg"/>' +
-                                '</div>' +
-                                '<div class="title">Flight</div>' +
-                            '</div>' +
-                        '</div>' +
-                       ' <div class="col-md-1 col-sm-1 col-xs-6 box2">' +
-                            '<div class="plaine">' +
-                                '<input type="checkbox" id="m5" name="cc" />' +
-                                '<label for="m5"><span></span></label>' +
-                                '<div class="thumbnail">' +
-                                    '<img src="images/building.jpg"/>' +
-                               ' </div>' +
-                                '<div class="title">Accommodation</div>' +
-                           ' </div>' +
-                       ' </div>' +
-                        '<div class="col-md-1 col-sm-1 col-xs-6 box2 ">' +
-                            '<div class="plaine">' +
-                                '<input type="checkbox" id="m6" name="cc" />' +
-                                '<label for="m6"><span></span></label>' +
-                                '<div class="thumbnail">' +
-                                   ' <img src="images/cars.png" />' +
-                                '</div>' +
-                           '     <div class="title">Cars</div>' +
-                           ' </div>' +
-                        '</div>' +
-                        '<div class="col-md-2 col-sm-4 col-xs-12 enter-price">' +
-                                '<div class="row row-padding">' +
-                                    '<div class="col-md-4 col-sm-4 col-xs-4">' +
-                                        '<div class="row">' +
-                                            '<div class="col-xs-6">' +
-                                              ' <div class="dollaer"> $</div>' +
-                                           ' </div>' +
-                                           ' <div class="col-xs-6">' +
-                                               ' <input type="button" field="quantity" class="qtyplus" value=" ">' +
-                                               ' <input type="button" field="quantity" class="qtyminus" value=" ">' +
-                                          '  </div>' +
-                                        '</div>' +
-                                    '</div>' +
-                                   ' <div class="col-md-8 col-sm-8 col-xs-8">' +
-                                      '  <input type="text" class="form-control" placeholder="Enter budget" name="quantity">' +
-                                   ' </div>' +
-                               ' </div>' +
-                       ' </div>' +
-                        '<div class="col-md-1 col-sm-4 col-xs-12 select-month border_right">' +
-                            '<div class="row">' +
-                               ' <div class="col-md-1 col-sm-4 col-xs-3">' +
-                                   ' <img src="images/user.jpg" class="icon"/>' +
-                                '</div>' +
-                               ' <div class="col-md-11 col-sm-8 col-xs-9 travel">' +
-                                   '<select class="form-control">' +
-                                       '<option>01</option>' +
-                                       '<option>02</option>' +
-                                       '<option>03</option>' +
-                                      ' <option>04</option>' +
-                                       '<option>05</option>' +
-
-                                       '<option>06</option>' +
-                                       '<option>07</option>' +
-                                       '<option>08</option>' +
-                                      ' <option>09</option>' +
-                                      ' <option>10</option>' +
-                                      ' <option>11</option>' +
-                                      ' <option>12</option>' +
-                                   '</select>' +
-                               ' </div>' +
-                           ' </div>' +
-                        '</div>' +
-                        '<div class="col-md-2 col-sm-4 col-xs-12 select-month ">' +
-                            '<div class="row border_right">' +
-                                '<div class="col-md-2 col-sm-4 col-xs-3">' +
-                                   ' <img src="images/marker.jpg" class="icon"/>' +
-                               ' </div>' +
-                                '<div class="col-md-10 col-sm-8 col-xs-9">' +
-                                   ' <input type="text" class="form-control" placeholder="Enter city from">' +
-                               ' </div>' +
-                            '</div>' +
-                        '</div>' +
-                        '<div class="col-md-2 col-sm-4 col-xs-12 select-month ">' +
-                            '<div class="row border_right">' +
-                                '<div class="col-md-2 col-sm-4 col-xs-3">' +
-                                    '<img src="images/marker.jpg" class="icon"/>' +
-                                '</div>' +
-                               ' <div class="col-md-10 col-sm-8 col-xs-9">' +
-                                  '  <input type="text" class="form-control" placeholder="Enter destination">' +
-                                '</div>' +
-                            '</div>' +
-                       ' </div>' +
-                        '<div class="col-md-2 col-sm-4 col-xs-12 select-month second-col">' +
-                            '<div class="row border_right">' +
-                                '<div class="col-md-3 col-sm-4 col-xs-3">' +
-                                   ' <img src="images/ca.jpg" class="icon"/>' +
-                                '</div>' +
-                                '<div class="col-md-9 col-sm-8 col-xs-9">' +
-                                   ' <input type="text" class="form-control date-picker" placeholder="Depart date" id="date-picker-1" >' +
-                                '</div>' +
-                            '</div>' +
-                        '</div>' +
-						'<div class="col-md-2 col-sm-4 col-xs-12 select-month last-col pull-right">' +
-                         '   <div class="row  multi">' +
-                               '<a href="#" onclick="removefunction()" ><i class="fa fa-minus"></i></a>' +
-                            '</div>' +
-                        '</div>' +
-                        
-                        '</div>' +
-                    '</div>' +
-                    
-                '</div>').appendTo('#Content');
-				$(".date-picker").removeClass('hasDatepicker').datepicker();
-				
-   
-  });
-}); 
-		function removefunction() {
-		// Removing a specified element without having to specify its parent node
-			var node = document.getElementById("nested");
-				if (node.parentNode) {
-				  node.parentNode.removeChild(node);
-				}
-			};
-
-
-</script>
-        <script src="js/formValidation.min.js"></script>
-        <script src="css/bootstrap1.min.js"></script>
-
-<script>
-    jQuery(document).ready(function(){
-        // This button will increment the value
-        $('.qtyplus').click(function(e){
-            // Stop acting like a button
-            e.preventDefault();
-            // Get the field name
-            fieldName = $(this).attr('field');
-            // Get its current value
-            var currentVal = parseInt($('input[name='+fieldName+']').val());
-            // If is not undefined
-            if (!isNaN(currentVal)) {
-                // Increment
-                $('input[name='+fieldName+']').val(currentVal + 1);
+    <script src="js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function sticky_relocate() {
+            var window_top = $(window).scrollTop();
+            var div_top = $('#sticky-anchor').offset().top;
+            if (window_top > div_top) {
+                $('#sticky').addClass('stick');
+                $('#sticky-anchor').height($('#sticky').outerHeight());
             } else {
-                // Otherwise put a 0 there
-                $('input[name='+fieldName+']').val(0);
+                $('#sticky').removeClass('stick');
+                $('#sticky-anchor').height(0);
             }
-        });
-        // This button will decrement the value till 0
-        $(".qtyminus").click(function(e) {
-            // Stop acting like a button
-            e.preventDefault();
-            // Get the field name
-            fieldName = $(this).attr('field');
-            // Get its current value
-            var currentVal = parseInt($('input[name='+fieldName+']').val());
-            // If it isn't undefined or its greater than 0
-            if (!isNaN(currentVal) && currentVal > 0) {
-                // Decrement one
-                $('input[name='+fieldName+']').val(currentVal - 1);
-            } else {
-                // Otherwise put a 0 there
-                $('input[name='+fieldName+']').val(0);
-            }
-        });
-    });
-
-</script>
-<script src="js/owl.carousel.js"></script>
-<script>
-    $(document).ready(function () {
-
-        //Sort random function
-        function random(owlSelector) {
-            owlSelector.children().sort(function () {
-                return Math.round(Math.random()) - 0.5;
-            }).each(function () {
-                $(this).appendTo(owlSelector);
-            });
         }
 
-        $("#team_slider").owlCarousel({
+        $(function () {
+            $(window).scroll(sticky_relocate);
+            sticky_relocate();
+        });
 
-            slideSpeed: 800,
-            autoPlay: 2000,
-            items: 4,
-            stopOnHover: true,
-            itemsDesktop: [1199, 1],
-            itemsDesktopSmall: [979, 1],
-            itemsTablet: [768, 1],
-            navigation: true,
+        var dir = 1;
+        var MIN_TOP = 200;
+        var MAX_TOP = 350;
+
+        function autoscroll() {
+            var window_top = $(window).scrollTop() + dir;
+            if (window_top >= MAX_TOP) {
+                window_top = MAX_TOP;
+                dir = -1;
+            } else if (window_top <= MIN_TOP) {
+                window_top = MIN_TOP;
+                dir = 1;
+            }
+            $(window).scrollTop(window_top);
+            window.setTimeout(autoscroll, 100);
+        }
+    </script>
+    <script>
+        $(function () {
+            $('.addbtn').on('click', function () {
+                $('#counterDiv').html(function (i, val) { return val * 1 + 1 });
+                var counter = parseInt($('#counterDiv').html());
+                var data = $('#menu2').children()[0];
+                var htmlData = data.innerHTML;
+                htmlData = htmlData.replace(/checkbox07/g, "checkbox" + counter);
+                htmlData = htmlData.replace(/checkbox08/g, "checkbox" + counter + 1);
+                htmlData = htmlData.replace(/checkbox09/g, "checkbox" + counter + 2);
+                $(htmlData).appendTo('#Content');
+                $(".date-picker").removeClass('hasDatepicker').datepicker();
+            });
+        });
+        function removefunction() {
+            // Removing a specified element without having to specify its parent node
+            var node = document.getElementById("nested");
+            if (node.parentNode) {
+                node.parentNode.removeChild(node);
+            }
+        };
 
 
-            navigationText: [
-                "<i class='fa fa-chevron-left'></i>",
-                "<i class='fa fa-chevron-right'></i>"
-            ],
+    </script>
+    <script src="js/formValidation.min.js"></script>
+    <script src="css/bootstrap1.min.js"></script>
 
+    <script>
+        jQuery(document).ready(function () {
+            // This button will increment the value
+            $('.qtyplus').click(function (e) {
+                // Stop acting like a button
+                e.preventDefault();
+                // Get the field name
+                fieldName = $(this).attr('field');
+                // Get its current value
+                var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+                // If is not undefined
+                if (!isNaN(currentVal)) {
+                    // Increment
+                    $('input[name=' + fieldName + ']').val(currentVal + 1);
+                } else {
+                    // Otherwise put a 0 there
+                    $('input[name=' + fieldName + ']').val(0);
+                }
+            });
+            // This button will decrement the value till 0
+            $(".qtyminus").click(function (e) {
+                // Stop acting like a button
+                e.preventDefault();
+                // Get the field name
+                fieldName = $(this).attr('field');
+                // Get its current value
+                var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+                // If it isn't undefined or its greater than 0
+                if (!isNaN(currentVal) && currentVal > 0) {
+                    // Decrement one
+                    $('input[name=' + fieldName + ']').val(currentVal - 1);
+                } else {
+                    // Otherwise put a 0 there
+                    $('input[name=' + fieldName + ']').val(0);
+                }
+            });
+        });
+
+    </script>
+    <script src="js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            //Sort random function
+            function random(owlSelector) {
+                owlSelector.children().sort(function () {
+                    return Math.round(Math.random()) - 0.5;
+                }).each(function () {
+                    $(this).appendTo(owlSelector);
+                });
+            }
+
+            $("#team_slider").owlCarousel({
+
+                slideSpeed: 800,
+                autoPlay: 2000,
+                items: 4,
+                stopOnHover: true,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [979, 1],
+                itemsTablet: [768, 1],
+                navigation: true,
+
+
+                navigationText: [
+                    "<i class='fa fa-chevron-left'></i>",
+                    "<i class='fa fa-chevron-right'></i>"
+                ],
+
+
+            });
+            owl.trigger('play.owl.autoplay', [100]);
 
         });
-        owl.trigger('play.owl.autoplay', [100]);
-
-    });
-</script>
-<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
-<script type="text/javascript">
+    </script>
+    <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript">
         $(".date-picker").datepicker();
-		defaultDate: new Date()
-			$(".date-picker").on("change", function () {
-    			var id = $(this).attr("id");
-   				 var val = $("label[for='" + id + "']").text();
-   				 $("#msg").text(val + " changed");
-			});
-        </script>
-
-
+        defaultDate: new Date()
+        $(".date-picker").on("change", function () {
+            var id = $(this).attr("id");
+            var val = $("label[for='" + id + "']").text();
+            $("#msg").text(val + " changed");
+        });
+    </script>
 </body>
 </html>
