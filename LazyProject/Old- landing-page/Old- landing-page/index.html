@@ -1,0 +1,963 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lazy Gypsy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="font-awesome/css/font-awesome.css"/>
+<link rel="stylesheet" href="css/build.css"/>
+<link rel="stylesheet" href="plugin/datepicker/css/datepicker.css"/>
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+    $(".myTab a").click(function(e){
+    	e.preventDefault();
+    	$(this).tab('show');
+    });
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+                $('.datepickerbx').datepicker()
+      .on('changeDate', function(ev){
+        if (ev.date.valueOf() < startDate.valueOf()){
+        
+        }
+      });
+});
+</script>
+
+<link rel="stylesheet" href="css/media-query.css"/>
+</head>
+
+<body>
+<!-- Header Structure -->
+<header class="clearfix">
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    <div class="row">
+      <div class="logo"><a href="#" title="Lazy Gypsy"><img src="images/logo.png" alt="Lazy Gypsy"/></a></div>
+    </div>
+  </div>
+  <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 hidden-md">
+    <div class="header-info clearfix"> <span class="border social-links pull-right hidden-xs"> <a href="#" title="Facebook"><img src="images/ico-fb@2x.png" alt="" /></a> <a href="#" title="Twitter"><img src="images/ico-twitter@2x.png" alt="" /></a> <a href="#" title="Instagram"><img src="images/ico-instagram@2x.png" alt="" /></a> <a href="#" title="Mail"><img src="images/ico-mail-red@2x.png" alt="" /></a> </span> <span class="pull-right"> <a href="#" title="" class="mail hidden-xs"><img src="images/ico-mail@2x.png" alt=""/><span>info@hellohelp.com</span></a> <a href="#" title="" class="call hidden-xs"><img src="images/ico-call@2x.png" alt=""/><span>+44087536920</span></a> <a href="#" title="" class="border event btn-login"><span>Login</span></a> <!--<a href="#" title="" class="border event btn-lang"><span>En</span></a>--> </span> </div>
+  </div>
+</header>
+
+<!-- MASTER CONTAINER START HERE -->
+<section class="master-container">
+	<!-- Banner Structure -->
+	<section class="banner"> <img src="images/banner.jpg"/> </section>
+
+	<!-- Searchbar Structure -->
+	<section class="searchbar-sctn">
+  <div class="container">
+    <div class="searchbar">
+    	<form action="">
+      		<ul class="nav nav-tabs myTab">
+        <li class="active"><a href="#sectionA">Return</a></li>
+        <li><a href="#sectionB">One Way</a></li>
+        <li><a href="#sectionC">Multi City</a></li>
+      </ul>
+      		<div class="tab-content">
+        <div id="sectionA" class="tab-pane fade in active">
+          <table cellpadding="0" cellspacing="0" class="search-panel">
+          	<tr>
+            	<td>
+                <div class="budget-sctn-device">
+        	<select class="inline-block">
+            	<option>$</option>
+                <option>&euro;</option>
+                <option>$</option>
+                <option>&euro;</option>
+            </select>
+            <input type="text" placeholder="Budget"/>
+        	</div>
+            <div class="checkbox checkbox-danger inline-block border-right mR10 pR10 plane-sctn">
+              <input id="checkbox1" type="checkbox" class="styled" checked>
+              <label for="checkbox1" class="ico-plane"> <img src="images/spacer.png"/> </label>
+            </div>
+            <div class="checkbox checkbox-danger inline-block border-right mR10 pR10 hotel-sctn">
+              <input id="checkbox2" type="checkbox" class="styled" checked>
+              <label for="checkbox2" class="ico-hotel"> <img src="images/spacer.png"/> </label>
+            </div>
+            <div class="checkbox checkbox-danger inline-block border-right mR10 pR10 car-sctn">
+              <input id="checkbox3" type="checkbox" class="styled" checked>
+              <label for="checkbox3" class="ico-car"> <img src="images/spacer.png"/> </label>
+            </div>
+            <div class="inline-block mR10 pR10 border-right traveller-sctn">
+              <div class="inline-block class-label">
+                <label>2</label>
+                <img src="images/ico-person.png"/> </div>
+              <div class="dropdown inline-block travellers">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> Travellers <span class="caret"></span> </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li class="clearfix">
+                    <label>Adults (18-64)</label>
+                    <select class="pull-right">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </li>
+                  <li class="clearfix">
+                    <label>Children (&lt;1-17)</label>
+                    <select class="pull-right">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </li>
+                  <li class="clearfix">
+                    <label>Seniors (65+)</label>
+                    <select class="pull-right">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="inline-block mR10 pR10 border-right from">
+              <input type="text" class="inputbx location" placeholder="From"/>
+            </div>
+            <div class="inline-block mR10 pR10 border-right to">
+              <input type="text" class="inputbx location" placeholder="To"/>
+            </div>
+            <div class="inline-block mR10 pR10 calendar border-right dept-date">
+              <div class="datepickerbx input-append date inline-block" data-date="12-07-2015" data-date-format="dd-mm-yyyy" >
+                <input class="span2 border-right" size="16" type="text" value="Depart">
+                <span class="add-on"></span> </div>
+              <div class="datepickerbx input-append date inline-block" data-date="12-07-2015" data-date-format="dd-mm-yyyy" >
+                <input class="span2 border-right" size="16" type="text" value="Return">
+                <span class="add-on"></span> </div>
+            </div>
+            <span class="relative btn-search ">
+            <input type="submit" class="btn btn-danger" value="Search"/>
+            <span class="budget-sctn hidden-md">
+        	<select class="inline-block">
+            	<option>$</option>
+                <option>&euro;</option>
+                <option>$</option>
+                <option>&euro;</option>
+            </select>
+            <input type="text" placeholder="Budget"/>
+        	</span>
+            </span>
+            </td>
+          </tr>
+         </table>
+        </div>
+        <div id="sectionB" class="tab-pane fade">
+          <table cellpadding="0" cellspacing="0" class="search-panel">
+          	<tr>
+            	<td>
+                	<div class="budget-sctn-device">
+        	<select class="inline-block">
+            	<option>$</option>
+                <option>&euro;</option>
+                <option>$</option>
+                <option>&euro;</option>
+            </select>
+            <input type="text" placeholder="Budget"/>
+        	</div>
+            		<div class="checkbox checkbox-danger inline-block border-right mR10 pR10 plane-sctn">
+              <input id="checkbox4" type="checkbox" class="styled" checked>
+              <label for="checkbox4" class="ico-plane"> <img src="images/spacer.png"/> </label>
+            </div>
+            		<div class="checkbox checkbox-danger inline-block border-right mR10 pR10 hotel-sctn">
+              <input id="checkbox5" type="checkbox" class="styled" checked>
+              <label for="checkbox5" class="ico-hotel"> <img src="images/spacer.png"/> </label>
+            </div>
+            		<div class="checkbox checkbox-danger inline-block border-right mR10 pR10 car-sctn">
+              <input id="checkbox6" type="checkbox" class="styled" checked>
+              <label for="checkbox6" class="ico-car"> <img src="images/spacer.png"/> </label>
+            </div>
+            		<div class="inline-block mR10 pR10 border-right traveller-sctn">
+              <div class="inline-block class-label">
+                <label>2</label>
+                <img src="images/ico-person.png"/> </div>
+              <div class="dropdown inline-block travellers">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> Travellers <span class="caret"></span> </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li class="clearfix">
+                    <label>Adults (18-64)</label>
+                    <select class="pull-right">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </li>
+                  <li class="clearfix">
+                    <label>Children (&lt;1-17)</label>
+                    <select class="pull-right">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </li>
+                  <li class="clearfix">
+                    <label>Seniors (65+)</label>
+                    <select class="pull-right">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            		<div class="inline-block mR10 pR10 border-right from">
+              <input type="text" class="inputbx location" placeholder="From"/>
+            </div>
+            		<div class="inline-block mR10 pR10 border-right to">
+              <input type="text" class="inputbx location" placeholder="To"/>
+            </div>
+            		<div class="inline-block mR10 pR10 calendar border-right dept-date">
+              <div class="datepickerbx input-append date inline-block" data-date="12-07-2015" data-date-format="dd-mm-yyyy" >
+                <input class="span2 border-right" size="16" type="text" value="Depart">
+                <span class="add-on"></span> </div>
+            </div>
+            		<span class="relative btn-search">
+            			<input type="submit" class="btn btn-danger btn-search" value="Search"/>
+            			<span class="budget-sctn hidden-md">
+        	<select class="inline-block">
+            	<option>$</option>
+                <option>&euro;</option>
+                <option>$</option>
+                <option>&euro;</option>
+            </select>
+            <input type="text" placeholder="Budget"/>
+        	</span>
+            		</span>
+            	</td>
+            </tr>
+          </table>
+        </div>
+        <div id="sectionC" class="tab-pane fade">
+          <table cellpadding="0" cellspacing="0" class="search-panel pB10">
+          	<tr>
+            	<td>
+                	<div class="budget-sctn-device">
+        	<select class="inline-block">
+            	<option>$</option>
+                <option>&euro;</option>
+                <option>$</option>
+                <option>&euro;</option>
+            </select>
+            <input type="text" placeholder="Budget"/>
+        	</div>
+                	<div class="checkbox checkbox-danger inline-block border-right mR10 pR10 plane-sctn">
+              <input id="checkbox7" type="checkbox" class="styled" checked>
+              <label for="checkbox7" class="ico-plane"> <img src="images/spacer.png"/> </label>
+            </div>
+            		<div class="checkbox checkbox-danger inline-block border-right mR10 pR10 hotel-sctn">
+              <input id="checkbox8" type="checkbox" class="styled" checked>
+              <label for="checkbox8" class="ico-hotel"> <img src="images/spacer.png"/> </label>
+            </div>
+            		<div class="checkbox checkbox-danger inline-block border-right mR10 pR10 car-sctn">
+              <input id="checkbox9" type="checkbox" class="styled" checked>
+              <label for="checkbox9" class="ico-car"> <img src="images/spacer.png"/> </label>
+            </div>
+            		<div class="inline-block mR10 pR10 border-right traveller-sctn">
+              <div class="inline-block class-label">
+                <label>2</label>
+                <img src="images/ico-person.png"/> </div>
+              <div class="dropdown inline-block travellers">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> Travellers <span class="caret"></span> </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                  <li class="clearfix">
+                    <label>Adults (18-64)</label>
+                    <select class="pull-right">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </li>
+                  <li class="clearfix">
+                    <label>Children (&lt;1-17)</label>
+                    <select class="pull-right">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </li>
+                  <li class="clearfix">
+                    <label>Seniors (65+)</label>
+                    <select class="pull-right">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            		<div class="inline-block mR10 pR10 border-right from">
+              <input type="text" class="inputbx location" placeholder="From"/>
+            </div>
+            		<div class="inline-block mR10 pR10 border-right to">
+              <input type="text" class="inputbx location" placeholder="To"/>
+            </div>
+            		<span class="relative">
+            		<div class="inline-block mR10 pR10 calendar dept-date">
+              <div class="datepickerbx input-append date inline-block" data-date="12-07-2015" data-date-format="dd-mm-yyyy" >
+                <input class="span2 border-right" size="16" type="text" value="Depart">
+                <span class="add-on"></span> </div>
+            </div>
+            		<span class="budget-sctn hidden-md">
+        	<select class="inline-block">
+            	<option>$</option>
+                <option>&euro;</option>
+                <option>$</option>
+                <option>&euro;</option>
+            </select>
+            <input type="text" placeholder="Budget"/>
+        	</span>
+            		</span>
+                </td>
+            </tr>
+            
+            <tr class="border-top pT10 pB10 added-row">
+            	<td>
+                	<div class="checkbox checkbox-danger inline-block border-right mR10 pR10 plane-sctn">
+              <input id="checkbox10" type="checkbox" class="styled" checked>
+              <label for="checkbox10" class="ico-plane"> <img src="images/spacer.png"/> </label>
+            </div>
+            <div class="checkbox checkbox-danger inline-block border-right mR10 pR10 hotel-sctn">
+              <input id="checkbox11" type="checkbox" class="styled" checked>
+              <label for="checkbox11" class="ico-hotel"> <img src="images/spacer.png"/> </label>
+            </div>
+            <div class="checkbox checkbox-danger inline-block border-right mR10 pR10 car-sctn">
+              <input id="checkbox12" type="checkbox" class="styled" checked>
+              <label for="checkbox12" class="ico-car"> <img src="images/spacer.png"/> </label>
+            </div>
+            <div class="inline-block mR10 pR10 border-right traveller-sctn">
+              <div class="inline-block class-label">
+                <label>2</label>
+                <img src="images/ico-person.png"/> </div>
+              <div class="dropdown inline-block travellers">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> Travellers <span class="caret"></span> </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                  <li class="clearfix">
+                    <label>Adults (18-64)</label>
+                    <select class="pull-right">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </li>
+                  <li class="clearfix">
+                    <label>Children (&lt;1-17)</label>
+                    <select class="pull-right">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </li>
+                  <li class="clearfix">
+                    <label>Seniors (65+)</label>
+                    <select class="pull-right">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="inline-block mR10 pR10 border-right from">
+              <input type="text" class="inputbx location" placeholder="From"/>
+            </div>
+            <div class="inline-block mR10 pR10 border-right to">
+              <input type="text" class="inputbx location" placeholder="To"/>
+            </div>
+            <div class="inline-block mR10 pR10 calendar dept-date">
+              <div class="datepickerbx input-append date inline-block" data-date="12-07-2015" data-date-format="dd-mm-yyyy" >
+                <input class="span2 border-right" size="16" type="text" value="Depart">
+                <span class="add-on"></span> </div>
+            </div>
+            
+            <a href="#" title="Delete" ><i class="icon-remove"></i></a>
+                </td>
+            </tr>
+          </table>
+          <div class="btn-sctn">         
+          <a class="btn btn-primary btn-addmore"><i class="icon-plus"></i> Add More</a>
+          <a class="btn btn-danger btn-search">Search</a>
+          </div>
+        </div>
+      </div>
+      	</form>
+    </div>
+  </div>
+</section>
+
+	<!-- Content Structure -->
+	<section class="content mB40">
+  <div class="container">
+    <div class="row">
+      <h1 class="sctn-title text-center mT30 mB15">About Lazy Gypsy</h1>
+      <p class="cont-txt text-center mB40">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut lab ore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+      <div class="clearfix">
+        <div class="col-lg-6">
+          <div class="cont-box text-center mB30">
+            <h3 class="cont-title mB30">RESTAURANT & BANQUETS</h3>
+            <p class="mB40">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do</p>
+            <a href="#" title="Read More">Read More <i class="icon-caret-right"></i></a> </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="cont-box text-center mB30">
+            <h3 class="cont-title mB30">ROOMS</h3>
+            <p class="mB40">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do</p>
+            <a href="#" title="Read More">Read More <i class="icon-caret-right"></i></a> </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="cont-box text-center">
+            <h3 class="cont-title mB30">FLIGHTS</h3>
+            <p class="mB40">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do</p>
+            <a href="#" title="Read More">Read More <i class="icon-caret-right"></i></a> </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="cont-box text-center">
+            <h3 class="cont-title mB30">HOTELS</h3>
+            <p class="mB40">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do</p>
+            <a href="#" title="Read More">Read More <i class="icon-caret-right"></i></a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+	<!-- News Structure -->
+	<section class="news-sctn">
+  <div class="container">
+    <div class="news">
+      <h3 class="sctn-title">News</h3>
+      <div class="clearfix">
+        <div class="row mB20">
+          <div class="col-lg-4">
+            <div class="img-sctn clearfix">
+              <div class="col-lg-4"> <img src="images/ico-calendar-white.png" class="ico-calendar"/>
+                <div class="date"> <span>29</span><span>Jan</span> </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="row text-right"><img src="images/news-img.jpg"/></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="title">Lorem ipsum dolor sit amet</div>
+            <p class="cont-txt text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci didunt ut lab ore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe rcitation ullamco laboris nisi. nim ad minim veniam, quis nostrud exe rcitatio.</p>
+            <a href="#" title="Readmore" class="readmore">Read More <i class="icon-caret-right"></i></a> </div>
+        </div>
+        <div class="row mB20">
+          <div class="col-lg-4">
+            <div class="img-sctn clearfix">
+              <div class="col-lg-4"> <img src="images/ico-calendar-white.png" class="ico-calendar"/>
+                <div class="date"> <span>29</span><span>Jan</span> </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="row text-right"><img src="images/news-img.jpg"/></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="title">Lorem ipsum dolor sit amet</div>
+            <p class="cont-txt text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci didunt ut lab ore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe rcitation ullamco laboris nisi. nim ad minim veniam, quis nostrud exe rcitatio.</p>
+            <a href="#" title="Readmore" class="readmore">Read More <i class="icon-caret-right"></i></a> </div>
+        </div>
+        <div class="row mB20">
+          <div class="col-lg-4">
+            <div class="img-sctn clearfix">
+              <div class="col-lg-4"> <img src="images/ico-calendar-white.png" class="ico-calendar"/>
+                <div class="date"> <span>29</span><span>Jan</span> </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="row text-right"><img src="images/news-img.jpg"/></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="title">Lorem ipsum dolor sit amet</div>
+            <p class="cont-txt text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci didunt ut lab ore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe rcitation ullamco laboris nisi. nim ad minim veniam, quis nostrud exe rcitatio.</p>
+            <a href="#" title="Readmore" class="readmore">Read More <i class="icon-caret-right"></i></a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</section>
+<!-- MASTER CONTAINER END HERE -->
+
+<!-- Footer Structure -->
+<footer class=" pT20 pB20">
+  <div class="container">
+  	<div class="row">
+    	<div class="clearfix">
+        	<div class="col-lg-3">
+            	<h3 class="footer-title mB20">Quick Links</h3>
+                <ul class="quick-links">
+                	<li><a href="#" title="About Us">About Us</a></li>
+                    <li><a href="#" title="Services">Services</a></li>
+                    <li><a href="#" title="Contact Us">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+            	<div class="contact-detail clearfix">
+            	<h3 class="footer-title mB20">Contact Us</h3>
+                <div class="row mB10">
+                	<div class="col-lg-4 text-right">
+                    	<label>Address:</label>
+                    </div>
+                    <div class="col-lg-8">
+                    	<span>C-201 Manali Resydency Opp. Nikol Lake, Ahmedabad Gujarat</span>
+                    </div>
+                </div>
+                <div class="row mB10">
+                	<div class="col-lg-4 text-right">
+                    	<label>Phone:</label>
+                    </div>
+                    <div class="col-lg-8">
+                    	<span>+440 12346780</span>
+                    </div>
+                </div>
+                <div class="row mB10">
+                	<div class="col-lg-4 text-right">
+                    	<label>Email:</label>
+                    </div>
+                    <div class="col-lg-8">
+                    	<span>support@lazygypsy.com</span>
+                    </div>
+                </div>
+                <div class="row mB10">
+                	<div class="col-lg-4 text-right">
+                    	<label>GPS:</label>
+                    </div>
+                    <div class="col-lg-8">
+                    	<span>12.021211-118.469009</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+            	<div class="logo-img text-right"><img src="images/logo2.png"/></div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+  	<div class="container">
+    	<div class="text-center">
+    	<a href="" title="">Copyright &copy; 2015 lagygypsy</a><span>|</span>
+        <a href="" title="">About Lagygypsy</a><span>|</span>
+        <a href="" title="">Contact Support</a>
+        </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Page Load Popup Start Here -->
+<div id="boxes" class="hidden-xs hidden-md">
+  <div style="top: 199.5px; left: 551.5px; display: none;" id="dialog" class="window container">
+    <div id="popupfoot" class="mB30"> <a href="#" class="close agree"><i class="icon-remove"></i></a> </div>
+    <div class="searchbar">
+    	<form action="">
+      		<ul class="nav nav-tabs border-bottom myTab">
+        <li class="active"><a href="#return">Return</a></li>
+        <li><a href="#OneWay">One Way</a></li>
+        <li><a href="#multicity">Multi City</a></li>
+      </ul>
+      		<div class="tab-content">
+        <div id="return" class="tab-pane fade in active">
+          <table cellpadding="0" cellspacing="0" class="search-panel">
+          	<tr>
+            	<td>
+            <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
+              <input id="checkbox01" type="checkbox" class="styled" checked>
+              <label for="checkbox01" class="ico-plane"> <img src="images/spacer.png"/> </label>
+            </div>
+            <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
+              <input id="checkbox02" type="checkbox" class="styled" checked>
+              <label for="checkbox02" class="ico-hotel"> <img src="images/spacer.png"/> </label>
+            </div>
+            <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
+              <input id="checkbox03" type="checkbox" class="styled" checked>
+              <label for="checkbox03" class="ico-car"> <img src="images/spacer.png"/> </label>
+            </div>
+            <div class="inline-block mR10 pR10 border-right">
+              <div class="inline-block class-label">
+                <label>2</label>
+                <img src="images/ico-person.png"/> </div>
+              <div class="dropdown inline-block travellers">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> Travellers <span class="caret"></span> </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu01">
+                  <li class="clearfix">
+                    <label>Adults (18-64)</label>
+                    <select class="pull-right">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </li>
+                  <li class="clearfix">
+                    <label>Children (&lt;1-17)</label>
+                    <select class="pull-right">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </li>
+                  <li class="clearfix">
+                    <label>Seniors (65+)</label>
+                    <select class="pull-right">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="inline-block mR10 pR10 border-right">
+              <input type="text" class="inputbx location" placeholder="From"/>
+            </div>
+            <div class="inline-block mR10 pR10 border-right">
+              <input type="text" class="inputbx location" placeholder="To"/>
+            </div>
+            <div class="inline-block mR10 pR10 calendar border-right">
+              <div class="datepickerbx input-append date inline-block" data-date="12-07-2015" data-date-format="dd-mm-yyyy" >
+                <input class="span2 border-right" size="16" type="text" value="Depart">
+                <span class="add-on"></span> </div>
+              <div class="datepickerbx input-append date inline-block" data-date="12-07-2015" data-date-format="dd-mm-yyyy" >
+                <input class="span2 border-right" size="16" type="text" value="Return">
+                <span class="add-on"></span> </div>
+            </div>
+            <span class="relative">
+            <input type="submit" class="btn btn-danger btn-search" value="Search"/>
+            <span class="budget-sctn">
+        	<select class="inline-block">
+            	<option>$</option>
+                <option>&euro;</option>
+                <option>$</option>
+                <option>&euro;</option>
+            </select>
+            <input type="text" placeholder="Budget"/>
+        	</span>
+            </span>
+          		</td>
+            </tr>
+        </table>
+        </div>
+        <div id="OneWay" class="tab-pane fade">
+          <table cellpadding="0" cellspacing="0" class="search-panel">
+          	<tr>
+            	<td>
+            <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
+              <input id="checkbox04" type="checkbox" class="styled" checked>
+              <label for="checkbox04" class="ico-plane"> <img src="images/spacer.png"/> </label>
+            </div>
+            <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
+              <input id="checkbox05" type="checkbox" class="styled" checked>
+              <label for="checkbox05" class="ico-hotel"> <img src="images/spacer.png"/> </label>
+            </div>
+            <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
+              <input id="checkbox06" type="checkbox" class="styled" checked>
+              <label for="checkbox06" class="ico-car"> <img src="images/spacer.png"/> </label>
+            </div>
+            <div class="inline-block mR10 pR10 border-right">
+              <div class="inline-block class-label">
+                <label>2</label>
+                <img src="images/ico-person.png"/> </div>
+              <div class="dropdown inline-block travellers">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> Travellers <span class="caret"></span> </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu02">
+                  <li class="clearfix">
+                    <label>Adults (18-64)</label>
+                    <select class="pull-right">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </li>
+                  <li class="clearfix">
+                    <label>Children (&lt;1-17)</label>
+                    <select class="pull-right">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </li>
+                  <li class="clearfix">
+                    <label>Seniors (65+)</label>
+                    <select class="pull-right">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="inline-block mR10 pR10 border-right">
+              <input type="text" class="inputbx location" placeholder="From"/>
+            </div>
+            <div class="inline-block mR10 pR10 border-right">
+              <input type="text" class="inputbx location" placeholder="To"/>
+            </div>
+            <div class="inline-block mR10 pR10 calendar border-right">
+              <div class="datepickerbx input-append date inline-block" data-date="12-07-2015" data-date-format="dd-mm-yyyy" >
+                <input class="span2 border-right" size="16" type="text" value="Depart">
+                <span class="add-on"></span> </div>
+            </div>
+            <span class="relative">
+            <input type="submit" class="btn btn-danger btn-search" value="Search"/>
+            <span class="budget-sctn">
+        	<select class="inline-block">
+            	<option>$</option>
+                <option>&euro;</option>
+                <option>$</option>
+                <option>&euro;</option>
+            </select>
+            <input type="text" placeholder="Budget"/>
+        	</span>
+            </span>
+          </td>
+          </tr>
+          </table>
+        </div>
+        <div id="multicity" class="tab-pane fade">
+        <table cellpadding="0" cellspacing="0" class="search-panel pB10">
+          	<tr>
+            	<td>
+          
+            <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
+              <input id="checkbox07" type="checkbox" class="styled" checked>
+              <label for="checkbox07" class="ico-plane"> <img src="images/spacer.png"/> </label>
+            </div>
+            <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
+              <input id="checkbox08" type="checkbox" class="styled" checked>
+              <label for="checkbox08" class="ico-hotel"> <img src="images/spacer.png"/> </label>
+            </div>
+            <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
+              <input id="checkbox09" type="checkbox" class="styled" checked>
+              <label for="checkbox09" class="ico-car"> <img src="images/spacer.png"/> </label>
+            </div>
+            <div class="inline-block mR10 pR10 border-right">
+              <div class="inline-block class-label">
+                <label>2</label>
+                <img src="images/ico-person.png"/> </div>
+              <div class="dropdown inline-block travellers">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> Travellers <span class="caret"></span> </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu03">
+                  <li class="clearfix">
+                    <label>Adults (18-64)</label>
+                    <select class="pull-right">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </li>
+                  <li class="clearfix">
+                    <label>Children (&lt;1-17)</label>
+                    <select class="pull-right">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </li>
+                  <li class="clearfix">
+                    <label>Seniors (65+)</label>
+                    <select class="pull-right">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="inline-block mR10 pR10 border-right">
+              <input type="text" class="inputbx location" placeholder="From"/>
+            </div>
+            <div class="inline-block mR10 pR10 border-right">
+              <input type="text" class="inputbx location" placeholder="To"/>
+            </div>
+            <span class="relative">
+            	<div class="inline-block mR10 pR10 calendar">
+              <div class="datepickerbx input-append date inline-block" data-date="12-07-2015" data-date-format="dd-mm-yyyy" >
+                <input class="span2 border-right" size="16" type="text" value="Depart">
+                <span class="add-on"></span> </div>
+            </div>
+            	<span class="budget-sctn">
+        	<select class="inline-block">
+            	<option>$</option>
+                <option>&euro;</option>
+                <option>$</option>
+                <option>&euro;</option>
+            </select>
+            <input type="text" placeholder="Budget"/>
+        	</span>
+            </span>
+
+          </td>
+          </tr>
+          
+          <tr class="search-panel border-top pT10 pB10">
+          <td>
+          
+            <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
+              <input id="checkbox010" type="checkbox" class="styled" checked>
+              <label for="checkbox010" class="ico-plane"> <img src="images/spacer.png"/> </label>
+            </div>
+            <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
+              <input id="checkbox011" type="checkbox" class="styled" checked>
+              <label for="checkbox011" class="ico-hotel"> <img src="images/spacer.png"/> </label>
+            </div>
+            <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
+              <input id="checkbox012" type="checkbox" class="styled" checked>
+              <label for="checkbox012" class="ico-car"> <img src="images/spacer.png"/> </label>
+            </div>
+            <div class="inline-block mR10 pR10 border-right">
+              <div class="inline-block class-label">
+                <label>2</label>
+                <img src="images/ico-person.png"/> </div>
+              <div class="dropdown inline-block travellers">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> Travellers <span class="caret"></span> </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu04">
+                  <li class="clearfix">
+                    <label>Adults (18-64)</label>
+                    <select class="pull-right">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </li>
+                  <li class="clearfix">
+                    <label>Children (&lt;1-17)</label>
+                    <select class="pull-right">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </li>
+                  <li class="clearfix">
+                    <label>Seniors (65+)</label>
+                    <select class="pull-right">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="inline-block mR10 pR10 border-right">
+              <input type="text" class="inputbx location" placeholder="From"/>
+            </div>
+            <div class="inline-block mR10 pR10 border-right">
+              <input type="text" class="inputbx location" placeholder="To"/>
+            </div>
+            <div class="inline-block mR10 pR10 calendar">
+              <div class="datepickerbx input-append date inline-block" data-date="12-07-2015" data-date-format="dd-mm-yyyy" >
+                <input class="span2 border-right" size="16" type="text" value="Depart">
+                <span class="add-on"></span> </div>
+            </div>
+            
+            <a href="#" title="Delete" ><i class="icon-remove"></i></a>
+          
+          </td>
+          </tr>
+          </table>
+          <a class="btn btn-primary btn-addmore"><i class="icon-plus"></i> Add More</a>
+          <a class="btn btn-danger btn-search">Search</a>
+        </div>
+      </div>
+      	</form>
+    </div>
+    <div class="video-sctn text-center mT20">
+    	<video controls> 
+  			<source src=video/small.webm type=video/webm> 
+  			<source src=video/small.ogv type=video/ogg> 
+  			<source src=video/small.mp4 type=video/mp4>
+  			<source src=video/small.3gp type=video/3gp>
+	</video>
+    </div>
+  </div>
+  <div style="width: 1478px; font-size: 32pt; color:white; height: 602px; display: none; opacity: 0.2;" id="mask"></div>
+</div>
+<script src="pageload-popup/main.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<link rel="stylesheet" href="pageload-popup/main.css">
+<!-- Page Load Popup End Here -->
+
+</body>
+
+<!--- PLUGINS --->
+<script src="plugin/datepicker/js/bootstrap-datepicker.js"></script>
+</html>

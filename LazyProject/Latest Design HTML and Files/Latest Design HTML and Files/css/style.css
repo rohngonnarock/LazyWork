@@ -1,0 +1,1395 @@
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url('../fonts/montserrat/Montserrat-Bold.otf');
+}
+
+@font-face {
+    font-family: Montserrat-regular;
+    src: url('../fonts/montserrat/Montserrat-Regular.otf');
+}
+body{
+	overflow-x:hidden;
+}
+.navbar-default {
+    background-color: transparent;
+    border: 0px;
+    border-radius: 0px;
+    margin-top: 22px;
+}
+
+.navbar-brand {
+    margin: 0px;
+    padding: 0px;
+}
+
+.login-nav {
+    margin-top: 22px;
+}
+
+.login-btn {
+    border: 1px solid #4c4c4c;
+    text-transform: uppercase;
+    padding: 10px 15px !important;
+    border-radius: 3px;
+}
+
+h1 {
+    text-align: center;
+    color: #4c4c4c;
+    font-family: Montserrat-Bold;
+    font-size: 60px;
+}
+
+h2 {
+    text-align: center;
+    color: #4c4c4c;
+    font-family: Montserrat-Bold;
+    font-size: 18px;
+}
+
+.color_red {
+    color: #d71a21;
+}
+
+.dash {
+    background-color: #4c4c4c;
+    height: 2px;
+    width: 140px;
+    margin: 20px auto 30px;
+    border-top: 1px solid #b7b7b7;
+    border-bottom: 1px solid #949494;
+}
+
+.filters-tabs {
+    border: 0px;
+    width: 390px;
+    margin: 0px auto;
+}
+.multi > a {
+    outline: medium none;
+    padding: 0 10px;
+    text-decoration: none;
+}
+.filter1 {
+    margin-top: 20px;
+}
+.multi .fa {
+    color: #1f1f1f;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: left;
+    width: 100%;
+}
+.filters-tabs > li.active > a, .filters-tabs > li.active > a:hover, .filters-tabs > li.active > a:focus {
+    border-bottom: 2px solid #d71a21 !important;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    color: #d71a21;
+	outline: medium none;
+}
+
+.filters-tabs li a {
+    border-bottom: 2px solid transparent !important;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 13px;
+    font-family: Montserrat-regular;
+    font-size: 16px;
+    color: #4c4c4c;
+    text-transform: uppercase;
+    margin-right: 13px !important;
+}
+
+.nav-tabs > li {
+    margin-bottom: !important;
+}
+.filter {
+    margin-top: 20px;
+	margin-bottom: 10px;
+}
+.modify-filter {
+    display: none;
+}
+.filter .row:last-child {
+    border: medium none;
+}
+.filter .row {
+    border: 1px solid #f0f0f0;
+}
+.filter .row .col-md-1 {
+    padding: 0px;
+}
+
+.button_area1 {
+    text-align: center;
+    margin-top: 30px;
+}
+.button_area {
+    text-align: center;
+    margin-top: 56px;
+}
+.btn-danger {
+    background-color: #d71a21;
+    border: 0px;
+
+}
+
+.search-book {
+    max-width: 195px;
+    width: 100%;
+    padding: 15px 0px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Montserrat-regular;
+}
+.buton .btn-default {
+    background: #b2b2b2 none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 38px;
+    padding: 10px 20px;
+}
+.row.buton {
+    border: medium none !important;
+}
+
+
+
+.separater-img img {
+    width: 100%;
+}
+
+section {
+    padding: 86px 0px 83px;
+}
+
+.gypsy {
+    background-image: url("../images/about.png");
+    background-size: cover;
+    background-position: top;
+}
+
+.white-layer {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.gypsy p.description {
+    font-size: 16px;
+    color: #4c4c4c;
+    font-family: Montserrat-regular;
+    text-align: center;
+    padding: 24px 60px 0px;
+}
+
+.thumbnail {
+    background-color: transparent;
+    padding: 0px;
+    border: 0px;
+    margin: 0;
+}
+
+.about-services {
+    margin-top: 100px;
+}
+
+.service_box h3 {
+    color: #4a374f;
+    font-size: 18px;
+    text-align: center;
+    font-family: Montserrat-Bold;
+    margin: 46px 20px 27px;
+
+}
+
+.service_box p {
+    font-size: 12px;
+    font-family: Montserrat-regular;
+    color: #777777;
+    text-align: center;
+
+}
+
+.service_box:hover h3 {
+    color: #d71a21;
+}
+
+.update-section h2 img {
+    max-height: 18px;
+    margin-right: 7px;
+}
+
+.update_box img {
+    width: 100%;
+}
+
+.update_box {
+    margin-top: 40px;
+}
+
+.update_box h3 {
+    margin: 15px 0px 19px;
+    color: #222222;
+    font-size: 18px;
+    font-family: Montserrat-regular;
+}
+
+.update_box p {
+
+    color: #777777;
+    font-size: 14px;
+    font-family: Montserrat-regular;
+
+}
+
+.update_box a {
+    color: #d71a21;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: Montserrat-regular;
+}
+
+.update_box a:hover {
+    text-decoration: none;
+}
+
+.footer-primary {
+    background-color: #222222;
+    padding: 34px 0px 35px;
+}
+
+.footer-primary h2 {
+    color: #fff;
+    text-align: left;
+    font-size: 18px;
+    font-family: Montserrat-regular;
+    margin-bottom: 32px;
+}
+
+.footer-primary p {
+    color: #f1f1f1;
+    font-family: Montserrat-regular;
+    font-size: 12px;
+}
+
+.footer-links {
+    margin-left: 0px;
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+.footer-links li {
+    padding: 2px 0px;
+}
+
+.footer-links a {
+    font-family: Montserrat-regular;
+    color: #efefef;
+}
+
+.footer-links a:hover {
+    text-decoration: none;
+}
+
+.footer-primary h3 {
+    color: #efefef;
+    text-align: left;
+    font-size: 18px;
+    font-family: Montserrat-regular;
+    margin-bottom: 32px;
+    text-transform: capitalize;
+}
+
+.contact-list {
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.contact-list a {
+    color: #efefef;
+    font-family: Montserrat-regular;
+    font-size: 12px;
+    text-transform: capitalize;
+
+}
+
+.contact-list i {
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.footer-icons {
+    list-style-type: none;
+    margin-left: 0px;
+    margin-top: 60px;
+    padding-left: 0px;
+}
+
+.footer-icons li {
+    display: inline;
+}
+
+.footer-icons a i {
+    height: 40px;
+    width: 40px;
+    background-color: #4c4c4c;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.footer-secondry {
+    padding: 24px 0px;
+}
+
+.footer-secondry p {
+    text-align: center;
+    font-size: #555555;
+    font-family: Montserrat-regular;
+}
+
+.plaine {
+    display: block;
+    height: 60px;
+    width: 40px;
+}
+.box2 .plaine {
+    display: block;
+    height: 60px;
+    width: 80px;
+}
+.title {
+    background-color: #d71a21;
+    color: #ffffff;
+    display: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    max-width: 200px;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    z-index: 2147483647;
+}
+.plaine:hover  .title {
+    display: block;
+	margin-bottom:30px
+}
+.filter input[type="checkbox"] {
+    display: none;
+}
+
+.filter input[type="checkbox"] + label span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: -1px -1px 0px !important;
+    vertical-align: middle;
+    border: 1px solid #d7d7d7;
+    cursor: pointer;
+    background-size: cover;
+
+}
+
+.filter input[type="checkbox"]:checked + label span {
+    background: url(../images/checkmark_1.png) left top no-repeat;
+    background-size: cover;
+}
+.filter .filter2 input[type="checkbox"] {
+    display: none;
+}
+
+.filter .filter2 input[type="checkbox"] + label span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: -1px -1px 0px !important;
+    vertical-align: middle;
+    border: 1px solid #d7d7d7;
+    cursor: pointer;
+    background-size: cover;
+
+}
+
+
+.box1 {
+    border: 1px solid #f0f0f0;
+    width: 50px;
+}
+.box3 {
+    border: 1px solid #f0f0f0;
+    width: 50px;
+}
+.box2 {
+    border: 1px solid #f0f0f0;
+    width: 90px;
+}
+.plaine1 {
+    display: block;
+    height: 60px;
+    width: 67px;
+}
+.icon{
+	padding-top:5px;
+}
+input.qtyplus {
+    width: 15px;
+    height: 15px;
+    background-image: url("../images/upkey.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border: 0px;
+    background-size: contain;
+    background-color: transparent;
+}
+
+input.qtyminus {
+    width: 15px;
+    height: 15px;
+    background-image: url("../images/downkey.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    border: 0px;
+    background-size: contain;
+    background-color: transparent;
+
+}
+
+.enter-price {
+    border: 1px solid #f0f0f0;
+}
+.enter-price .row {
+    border: 0px;
+
+}
+
+.select-month .row {
+    margin: 0px;
+}
+
+.row-padding {
+    padding-top: 10px;
+}
+
+.dollaer {
+    font-size: 17px;
+    color: #90a4ae;
+    padding-top: 5px;
+}
+
+.enter-price .col-md-8 {
+    padding: 0px;
+}
+
+.enter-price .form-control {
+    box-shadow: none;
+    border: 0px;
+
+}
+.form-control {
+    height: 50px;
+    padding: 0 6px 10px;
+}
+.col-md-11.travel {
+    padding-right: 0;
+}
+.search-month {
+    padding: 0px !important;
+    border-right: 1px solid #f0f0f0 !important;
+}
+
+.select-month .row {
+    border: 0px;
+    padding-top: 10px;
+
+}
+
+.select-month {
+    padding: 0px !important;
+}
+
+.select-month .form-control {
+    border: 0px;
+    box-shadow: none;
+}
+
+.border_right {
+    border: 1px solid #f0f0f0 !important;
+}
+.last-col .border_right:last-child{
+	/*border-right:none !important;*/
+}
+.second-col .border_right:last-child{
+	/*border-right:none !important;*/
+}
+.select-month .col-md-2, .select-month .col-md-10, .select-month .col-md-8 {
+    padding: 0px;
+}
+
+.last-col {
+    padding-left: 0;
+    width: 14%;
+}
+.secondlast-col {
+    margin-left: 0;
+    padding-left: 0 !important;
+    width: 14%;
+}
+
+.multi {
+    float: right;
+    margin-right: -20px !important;
+    margin-top: -50px !important;
+    text-align: right;
+}
+/**
+welcome-menu
+**/
+
+.welcome-menu {
+    font-family: Montserrat-regular;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.book_box .thumbnail {
+    float: right;
+}
+
+.book_box .col-xs-4, .book_box .col-xs-8 {
+    padding: 0px;
+}
+
+.book-buttons {
+    border-bottom: 1px solid #f0f0f0;
+    border-top: 1px solid #f0f0f0;
+    margin: 10px auto;
+    padding: 10px 0;
+}
+a:focus{
+	outline:none;
+}
+.filter2 .modify{
+	margin:0;
+}
+.book-buttons .btn {
+    height:40px;
+    text-transform: capitalize;
+    font-size: 14px;
+    border-radius: 0px !important;
+    font-family: Montserrat-regular;
+    color: #fff !important;
+}
+
+.book-buttons .form-control {
+    height: 40px;
+    box-shadow: none;
+    border-radius: 0px;
+    font-family: Montserrat-regular;
+    color: #5d5d5d;
+    font-size: 19px;
+}
+
+.book-buttons .thumbnail img {
+    margin-top: 5px;
+}
+
+.btn-grey {
+    background-color: #5d5d5d;
+}
+
+.innre-page-tabs {
+    border: 0px !important;
+}
+
+.innre-page-tabs a {
+    font-size: 16px;
+    font-family: Montserrat-regular;
+    text-transform: capitalize;
+    padding: 23px 10px;
+    color: #666666;
+}
+
+.nav-tabs.innre-page-tabs > li.active > a, .nav-tabs.innre-page-tabs > li.active > a:hover, .nav-tabs.innre-page-tabs > li.active > a:focus {
+    background-color: #4c4c4c !important;
+    color: #fff !important;
+    margin: 0px 0 0;
+    outline: medium none;
+}
+.not {
+    padding: 0 20px 0 15px;
+}
+.tab-header {
+    background-color: #666;
+}
+
+.tab-header-menu {
+    list-style-type: none;
+    padding: 15px 22px;
+    width: 100%;
+
+}
+
+.tab-header-menu li {
+    display: inline;
+}
+
+.tab-header-menu li a {
+    color: #fff;
+    font-size: 16px;
+    font-family: Montserrat-regular;
+
+}
+
+.tab-header-menu li a i {
+    margin-right: 5px;
+}
+
+.tab-header-menu li a:hover {
+    text-decoration: none;
+}
+
+.tab-header-menu li a:after {
+    content: "|";
+
+    height: 50px;
+    width: 1px;
+    padding: 0px 22px;
+    color: #adadad;
+
+}
+
+.tab-header-menu li:nth-child(2) a:after, .tab-header-menu li:nth-child(3) a:after {
+    display: none;
+}
+
+.tab-header-menu li:nth-child(3) {
+    float: right;
+}
+
+.tab-filter {
+    background-color: #f3f3f3;
+    margin: 10px 0px 0px;
+    display: none;
+}
+.tab-filter span{
+	color:#4c4c4c;
+	font-family: Montserrat-regular;
+	font-size:12px;
+	font-weight:normal !important;
+	padding-left: 10px;
+}
+/* Range slider */
+
+
+
+/*/- Range slider */
+.check-area {
+    padding: 13px;
+    text-align: right;
+    border-bottom: 1px solid #bbbbbb;
+}
+.check-area span{
+	color:#4c4c4c;
+	font-family: Montserrat-regular;
+	font-size:12px;
+	font-weight:normal !important;
+	padding-left: 10px;
+}
+.check-area input{
+    margin-right: 7px;
+}
+.tab-filter .col-md-4:nth-child(1) {
+    border-right: 1px solid #acacac;
+    padding: 20px 30px;
+}
+.tab-filter .col-md-4{
+    border-right: 1px solid #acacac;
+    padding: 27px 30px;
+}
+.tab-filter .col-md-4:last-child{
+
+    border-right: 0px ;
+
+}
+
+/* Flights  section */
+
+.flight-table th{
+    color: #ed1e24;
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 14px;
+}
+.flight-table tr{
+	border:1px solid #ddd;
+}
+
+.flight-table td {
+    padding: 15px !important;
+    text-align: center;
+}
+.flight-table td:nth-child(4){
+	border-right:1px solid #ddd;
+}
+.flight-table td:nth-child(5){
+	border-right:1px solid #ddd;
+	padding:0 !important;
+}
+.flight-table td:nth-child(6){
+	border-right:1px solid #ddd;
+	padding:10px  0 0 !important;
+}
+.flight-table tr:nth-child(3){
+	margin-top:20px !;
+}
+
+.flight-table td strong {
+	color:#4c4c4c;
+	font-family: Montserrat-regular;
+	font-size:16px;
+	font-weight:normal !important;
+	padding-left: 10px;
+}
+.flight-table td span {
+	color:#999999;
+	font-family: Montserrat-regular;
+	font-size:12px;
+}
+.flight-table td span.date{
+	color:#666666;
+	font-family: Montserrat-regular;
+	font-size:12px;
+}
+.flight-table td span.price {
+	color:#4c4c4c;
+	font-family: Montserrat-regular;
+	font-size:20px;
+	font-weight:normal !important;
+	padding-left: 10px;
+}
+
+.deals-table tr {
+	border:none !important;
+}
+.deals-table td {
+    padding: 15px 15px 0 20px !important;
+	border-top:none !important;
+	text-align:left;
+}
+.deals-table td span.deal{
+	color:#4c4c4c;
+	font-family: Montserrat-regular;
+	font-size:12px;
+}
+.table{
+	margin: 5px 0;
+}
+hr {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #eee -moz-use-text-color -moz-use-text-color;
+    border-image: none;
+    border-style: solid none none;
+    border-width: 1px 0 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.price-table tr {
+	border:none !important;
+}
+.price-table td {
+    padding: 15px 15px 0 20px !important;
+	border-top:none !important;
+	text-align:left;
+	border-right:1px solid #ddd;
+}
+.price-table td:last-child{
+	border-right:none;
+}
+.price-table td span.deal{
+	color:#4c4c4c;
+	font-family: Montserrat-regular;
+	font-size:12px;
+}
+.price-table tr:nth-child(2) td{
+    border-top: 1px solid #ddd !important;
+    padding: 5px 0 !important;
+    text-align: center;
+}
+.price-table tr:nth-child(2) td a{
+	color:#4c4c4c;
+	text-decoration:none;
+	font-family:Montserrat-regular;
+	font-size:9px;
+}
+.price-table tr:nth-child(2) td a:hover , .price-table tr:nth-child(2) td a:focus{
+	text-decoration:none;
+	outline:none;
+}
+
+.btn-select{
+	background:#d71a21;
+	color:#fff;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Montserrat-regular;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.flight-table td span.seat {
+    color: #d71a21 !important;
+    font-size: 11px !important;
+    line-height: 40px;
+}
+.btn-select:hover, .btn-selectme:hover , .btn-loadmore:hover, .btn-select:focus{
+	color:#fff;
+}
+.btn-selectme{
+	background:#787878;
+	color:#fff;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Montserrat-regular;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.loadmore {
+    padding: 15px 0 25px;
+    text-align: center;
+}
+
+.btn-loadmore {
+    -moz-user-select: none;
+    background: #4c4c4c none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Montserrat-regular;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+/* /- Flights  section */
+
+/* Car Page  section */
+.cartab .col-md-6 {
+    padding: 10px;
+}
+.cartab .col-md-12 {
+    padding: 10px;
+}
+.cartab label {
+    color: #4c4c4c;
+    font-family: Montserrat-regular;
+    font-size: 14px;
+    font-weight: normal !important;
+    padding: 0 0 0 10px;
+	display:inline-flex;
+}
+
+.cartab input[type="checkbox"] {
+    display: none;
+}
+
+.cartab input[type="checkbox"] + label span {
+    background-size: cover;
+    border: 1px solid #d7d7d7;
+    cursor: pointer;
+    display: block;
+    height: 15px;
+    margin: 3px 10px 0 0 !important;
+    vertical-align: middle;
+    width: 15px;
+}
+.cartab input[type="checkbox"]:checked + label span {
+    background: url(../images/checkmark_1.png) left top no-repeat;
+    background-size: cover;
+}
+
+
+.carshow h3 {
+    color: #ee3a3e;
+    font-family: Montserrat-regular;
+    font-size: 18px;
+}
+.carshow h2 {
+    color: #d83844;
+    font-family: Montserrat-b;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+    text-align: left;
+	margin-bottom:20px;
+}
+.carshow .col-md-4 > span.circle {
+    background: #ee3a3e none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #fff;
+    font-family: Montserrat-Bold;
+    font-size: 20px;
+    height: 30px;
+    margin: 0 5px;
+    padding: 8px 10px;
+    text-align: center;
+    width: 30px;
+}
+.offer {
+    margin-top: 30px;
+}
+.offer span {
+    color: #4c4c4c;
+    font-family: Montserrat-regular;
+    font-size: 12px;
+    font-weight: normal !important;
+    padding-left: 5px;
+}
+.btn-choose {
+    -moz-user-select: none;
+    background: #d71a21 none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Montserrat-regular;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857;
+    margin-bottom: 20px;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+	margin-top:10px;
+}
+.carshow {
+    border: 1px solid #ddd;
+}
+.carshow:last-child {
+    margin-bottom: 20px;
+	padding-bottom:10px;
+}
+
+.carshow .row{
+	margin:0;
+}
+.carshow h4 {
+    color: #ee2d33;
+    font-family: Montserrat-Regular;
+	font-size:20px;
+}
+.carshow h4 span {
+    font-size: 36px;
+}
+.btn-choose:hover,.btn-choose:focus
+{
+	color:#fff;
+	outline:none;
+}
+
+.nav-tabs > li.activright > a, .nav-tabs > li.activright > a:hover, .nav-tabs > li.activright > a:focus {
+    background-color: #d71a21 !important;
+    color: #fff !important;
+    margin: 0px 0px 0;
+}
+.tabright {
+    float: right !important;
+    margin: 4px 0 0;
+}
+/*/- Car Page  section */
+
+/* Hotel Page  section */
+.hotelform {
+    background: #f8f8f8 none repeat scroll 0 0;
+	border:1px dotted #ddd;
+	margin-bottom:20px;
+}
+
+.hotelform h3 {
+    border: 1px dotted #ddd;
+    color: #333;
+    font-family: Montserrat-bold;
+    margin: 15px 0 20px 20px;
+    padding: 10px 20px;
+    text-align: center;
+}
+.hotelform label {
+    color: #333;
+    font-size: 17px;
+    margin-top: 30px;
+    text-align: right;
+}
+.hotelform .form-control {
+    height: 34px;
+    margin-top: 30px;
+    padding: 6px 12px;
+}
+
+.hotelform .col-md-2:first-child{
+	width:17%;
+}
+.hotelform .col-md-2{
+	width:12%;
+}
+.hotelform .col-md-1{
+	width:8%;
+	text-align: center;
+}
+.hotelform .fa {
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+.hotelform .btn-default{
+	background:#b2b2b2;
+	color:#fff;
+	font-family:Montserrat-Reguler;
+	margin-top: 30px;
+}
+
+.hoteltab label {
+    color: #4c4c4c;
+    display: inline-flex;
+    font-family: Montserrat-regular;
+    font-size: 12px;
+    font-weight: normal !important;
+    padding: 0;
+}
+
+.hoteltab input[type="checkbox"] {
+    display: none;
+}
+
+.hoteltab input[type="checkbox"] + label span {
+    background-size: cover;
+    border: 1px solid #d7d7d7;
+    cursor: pointer;
+    display: block;
+    height: 15px;
+    margin: 2px 10px 0 0 !important;
+    vertical-align: middle;
+    width: 15px;
+}
+.hoteltab input[type="checkbox"]:checked + label span {
+    background: url(../images/checkmark_1.png) left top no-repeat;
+    background-size: cover;
+}
+
+.hoteltab .col-md-2 {
+    margin: 20px 0;
+    padding: 0;
+}
+.leftsidebar {
+    background: #f8f8f8 none repeat scroll 0 0;
+    margin-bottom: 20px;
+    padding: 10px 15px 20px;
+}
+.row.mainarea {
+    margin: 0;
+}
+.mainarea {
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+.mainarea > h4 {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    padding: 15px;
+}
+.mainarea label {
+    color: #4c4c4c;
+    display: inline-flex;
+    font-family: Montserrat-regular;
+    font-size: 14px;
+    font-weight: normal !important;
+    margin-top: 10px;
+    padding: 0;
+}
+.gray {
+    color: gray;
+    outline: medium none;
+    text-decoration: none;
+}
+.yellow {
+    color: yellow;
+    outline: medium none;
+    text-decoration: none;
+}
+.gray:hover,.gray:focus, .yellow:hover, .yellow:focus{
+	text-decoration:none;
+	outline:medium none;
+	background-color:none;
+	color:none;
+}
+
+.mainarea input[type="checkbox"] {
+    display: none;
+}
+
+.mainarea input[type="checkbox"] + label span {
+    background-size: cover;
+    border: 1px solid #d7d7d7;
+    cursor: pointer;
+    display: block;
+    height: 15px;
+    margin: 3px 10px 0 0 !important;
+    vertical-align: middle;
+    width: 15px;
+}
+.mainarea input[type="checkbox"]:checked + label span {
+    background: url(../images/checkmark_1.png) left top no-repeat;
+    background-size: cover;
+}
+
+
+.mainarea .col-md-12 {
+    padding: 5px 15px;
+}
+.content-area .col-md-10{
+	padding:0;
+}
+.content-area p a span {
+    color: #dd0000;
+    font-weight: bold;
+    text-decoration: underline;
+	float:right;
+}
+.content-area p {
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+.fonts {
+    margin-top: 60px;
+}
+.fonts .fa {
+    color: #dd0000;
+    font-size: 18px;
+}
+#gmap_canvas img{max-width:none!important;background:none!important}
+
+.deals h3 {
+    font-size: 27px;
+    margin-top: 20px;
+}
+.deals {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+    padding: 10px 0 80px;
+}
+.btn-hotel {
+    background-color: #f12612;
+    border-radius: 0;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 17px;
+    padding: 5px 10px;
+}
+.deals h4 {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+.deals .break {
+    color: #009900;
+}
+.deals .refund{
+	color:#f12612;
+}
+
+.btn-selectdeal {
+    background-color: #009900;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 2px;
+    padding: 5px 15px;
+}
+.btn-otherdeal {
+    background-color: #dddddd;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 5px 10px;
+}
+
+ /* jssor slider bullet navigator skin 03 css */
+        /*
+        .jssorb03 div           (normal)
+        .jssorb03 div:hover     (normal mouseover)
+        .jssorb03 .av           (active)
+        .jssorb03 .av:hover     (active mouseover)
+        .jssorb03 .dn           (mousedown)
+        */
+		.slider {
+    		width: 100% !important;
+		}
+        .jssorb03 {
+            position: absolute;
+        }
+        .jssorb03 div, .jssorb03 div:hover, .jssorb03 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 21px;
+            height: 21px;
+            text-align: center;
+            line-height: 21px;
+            color: white;
+            font-size: 12px;
+            background: url('images/img/b03.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb03 div { background-position: -5px -4px; }
+        .jssorb03 div:hover, .jssorb03 .av:hover { background-position: -35px -4px; }
+        .jssorb03 .av { background-position: -65px -4px; }
+        .jssorb03 .dn, .jssorb03 .dn:hover { background-position: -95px -4px; }
+
+        /* jssor slider thumbnail navigator skin 16 css */
+        /*
+        .jssort16 .p            (normal)
+        .jssort16 .p:hover      (normal mouseover)
+        .jssort16 .pav          (active)
+        .jssort16 .pav:hover    (active mouseover)
+        .jssort16 .pdn          (mousedown)
+        */
+	
+.jssort16 .p {
+    border: 10px solid;
+    height: 103px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 120px;
+}    
+        .jssort16 .t {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 120px;
+            height: 100px;
+            border: none;
+        }
+        
+        .jssort16 .p img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 120px;
+            height: 100px;
+            filter: alpha(opacity=55);
+            opacity: .55;
+            transition: opacity .6s;
+            -moz-transition: opacity .6s;
+            -webkit-transition: opacity .6s;
+            -o-transition: opacity .6s;
+        }
+        
+        .jssort16 .pav img, .jssort16 .pav:hover img, .jssort16 .p:hover img {
+            filter: alpha(opacity=100);
+            opacity: 1;
+            transition: none;
+            -moz-transition: none;
+            -webkit-transition: none;
+            -o-transition: none;
+        }
+        
+        .jssort16 .pav:hover img, .jssort16 .p:hover img {
+            filter: alpha(opacity=70);
+            opacity: .7;
+        }
+        
+        .jssort16 .title, .jssort16 .title_back {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 120px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: #000;
+            font-size: 20px;
+        }
+        
+        .jssort16 .title_back {
+            background-color: #fff;
+            filter: alpha(opacity=50);
+            opacity: .5;
+        }
+        
+        .jssort16 .pav .title_back {
+            background-color: #000;
+            filter: alpha(opacity=50);
+            opacity: .5;
+        }
+        
+        .jssort16 .pav .title {
+            color: #fff;
+        }
+        
+        .jssort16 .p.pav:hover .title_back, .jssort16 .p:hover .title_back {
+            filter: alpha(opacity=40);
+            opacity: .4;
+        }
+        
+        .jssort16 .p.pdn img {
+            filter: alpha(opacity=100);
+            opacity: 1;
+        }
+		
+#sticky {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+}
+#sticky.stick {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #ccc;
+    margin-top: 0 !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}

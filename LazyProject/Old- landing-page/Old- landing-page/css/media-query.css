@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-width: 1024px) {
+	.hidden-md{ display:none;}
+	header{ background:#fff;}
+	header .event:hover{ color:#000;}
+	header .social-links{ display:none;}
+	header .header-info .mail{ display:none;}
+	header .header-info .call{ display:none;}
+	.search-panel .btn-search{ float:right;}
+	.searchbar .budget-sctn{ top:-114px; right:-22px;}
+	.search-panel .from{ width:13%;}
+	.search-panel .to{ width:13%;}
+	.search-panel .dept-date{ border-right:none!important; margin-right:0!important; padding-right:0!important;}
+	.searchbar .datepickerbx{ width:102px;}
+	#sectionB .budget-sctn{ top:-66px;}
+	#sectionC .budget-sctn{ top:-82px;}
+	.budget-sctn-device{ display:block;}
+}
+
+@media screen and (max-width: 991px) {
+	.searchbar .budget-sctn{ top:-126px;}
+	#sectionB .budget-sctn{ top:-126px;}
+	.search-panel .from{ width:19%;}
+	.search-panel .from input[type="text"]{ width:100%;}
+	.search-panel .to{ width:19%; border-right:0!important; margin-right:0!important;}
+	.search-panel .to input[type="text"]{ width:100%;}
+	.search-panel .dept-date{ margin-top:20px; margin-bottom:20px;}
+	.content .cont-box{ margin-bottom:30px;}
+	.search-panel .btn-search{ margin-top:20px;}
+}
+
+@media screen and (max-width: 640px) {
+	header{ height:auto; padding-bottom:10px;}
+	header .logo{ background:#fff; height:auto;}
+	header .pull-right{ float:none!important;}
+	header .header-info{ margin:0;}
+	header .header-info .btn-login{ width:100%; text-align:center;}
+	.banner{ display:none;}
+	.search-panel > tbody > tr > td{ padding:20px 20px 20px; background:#f2f2f2;}
+	.searchbar .budget-sctn{ top:-172px;}
+	.searchbar .nav-tabs li{ margin-bottom:10px; text-align:center;}
+	.search-panel .traveller-sctn{ text-align:center; }
+	.search-panel .traveller-sctn .travellers {}
+	.search-panel .traveller-sctn .travellers .dropdown-toggle{}
+	.search-panel .traveller-sctn .travellers .dropdown-menu{}
+	
+	.search-panel .checkbox{ width:35%;  border-right:0!important; float:left; margin:10px 0!important; background:#fff; padding:10px 30px;}
+	.search-panel .plane-sctn{ border-right:0!important; padding-top:10px; padding-bottom:10px;}
+	.search-panel .hotel-sctn{ border-right:0!important; padding-top:10px; padding-bottom:10px;}
+	.search-panel .car-sctn{ border-right:0!important; padding-top:10px; padding-bottom:10px; width:30%!important;}
+	
+	.search-panel .from{ width:26%;}
+	.search-panel .to{ width:26%;}
+	.search-panel .added-row > td{ padding-top:0;}
+	footer .text-right{ text-align:left!important;}
+	#sectionC .btn-sctn{ text-align:center; margin-top:10px;}
+	.search-panel .dept-date{ margin-bottom:10px;}
+	.budget-sctn-device{ text-align:center;}
+	
+	.btn-search{ float:none; width:100%;}
+	.btn-search .btn,
+	.btn-sctn .btn{ width:100%; padding:10px; font-size:20px; margin-bottom:10px;}
+	
+	
+}
+
+@media screen and (max-width: 360px) {
+	.searchbar .tab-content{ padding:10px;}
+	.searchbar .budget-sctn{ top:-406px; left:-160px;}
+	#sectionB .budget-sctn{ top:-365px;}
+	#sectionC .budget-sctn{ top:-250px; left:-230px;}
+	.search-panel .checkbox{ width:32%;}
+	.search-panel .car-sctn{ width:36%!important;}
+	.search-panel .traveller-sctn{ width:100%; border-right:0!important; background:#fff; padding:10px;}
+	.search-panel .from{ width:100%; border-right:0!important; background:#fff; margin:10px 0 10px 0; padding:10px; }
+	.search-panel .to{ width:100%; background:#fff; margin:0 0 10px 0; padding:10px;}
+	.search-panel .dept-date{ background:#fff; padding:0 10px 10px!important; margin-top:0!important; width:100%;}
+	.search-panel .dept-date .datepickerbx{ width:100%; padding-top:10px;}
+	.news-sctn .news .img-sctn { text-align:center;}
+	.news-sctn .news .img-sctn img{ width:100%;}
+	.news-sctn .news .img-sctn .ico-calendar{ width:auto; display:inline-block; margin-bottom:20px; margin-top:10px;}
+	.news-sctn .news .img-sctn .date{ display:inline-block;}
+	.news-sctn .news .img-sctn .date span{ display:inline-block; margin:0 2px;}
+	.searchbar .nav-tabs { text-align:center; padding:10px 0 0 0;}
+	.searchbar .nav-tabs li{ float:none; display:inline-block;}
+}
+
+@media screen and (max-width: 360px) {
+	.searchbar-sctn .container{ padding:0;}
+	.searchbar .myTab{ padding-bottom:0;}
+	.searchbar .tab-content{ padding-top:0;}
+}

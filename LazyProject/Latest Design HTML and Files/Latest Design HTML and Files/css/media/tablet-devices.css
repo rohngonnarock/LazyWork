@@ -1,0 +1,152 @@
+.book_box {
+    padding-bottom: 15px;
+}
+.tabright{
+    float: right !important;
+	padding-top: 15px;
+}
+.flight-table td {
+    padding: 15px 0 !important;
+    text-align: center;
+}
+.last-col {
+    padding-left: 0px !important;
+    width: 33%;
+}
+.second-col {
+    padding-left: 0 !important;
+    width: 33%;
+}
+.secondlast-col {
+    margin-left: 0;
+    padding-left: 0 !important;
+    padding-right: 0;
+    width: 33%;
+}
+.box1 {
+    border-right: 1px solid #f0f0f0;
+    width: 249px;
+}
+.box2 {
+    border-right: 1px solid #f0f0f0;
+    width: 249px;
+}
+.box3 {
+    border-right: 1px solid #f0f0f0;
+    width: 240px;
+}
+.multi {
+    float: none;
+    margin-left: 30px !important;
+    margin-right: 0 !important;
+    margin-top: 15px !important;
+    text-align: center;
+}
+
+.filters-tabs li a {
+    border-bottom: 2px solid transparent !important;
+    color: #4c4c4c;
+    font-family: Montserrat-regular;
+    font-size: 13px;
+    margin-left: 0;
+    margin-right: 5px !important;
+    padding-left: 0;
+    padding-right: 0;
+    text-transform: uppercase;
+}
+.nav > li > a {
+    display: block;
+    padding: 10px 24px;
+    position: relative;
+}
+.innre-page-tabs a {
+    color: #666666;
+    font-family: Montserrat-regular;
+    font-size: 14px;
+    padding: 23px 10px;
+    text-transform: capitalize;
+}
+.nav-tabs > li {
+    margin-bottom: 0 !important;
+}
+
+.hotelform .col-md-2:first-child {
+    width: 25%;
+}
+.hotelform .col-md-2 {
+    width: 25%;
+}
+.hotelform .col-md-1 {
+    text-align: center;
+    width: 12%;
+}
+
+.hoteltab .col-md-2 {
+    margin: 20px 0;
+    width: 33%;
+}
+
+.fa-heart::before {
+    content: "";
+}
+
+.fonts .fa {
+    color: #dd0000;
+    font-size: 12px;
+}
+.deals h4 {
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+.btn-hotel {
+    background-color: #f12612;
+    border-radius: 0;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 17px;
+    padding: 5px 8px;
+}
+.deals h3 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+.deals {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+    padding: 11px 0 135px;
+}
+.hotelform .form-control {
+    margin-top: 30px;
+}
+.tab-header.hotel {
+    background-color: #f8f8f8;
+    border: 1px dotted #ddd;
+    margin-bottom: 20px;
+    padding: 0 20px 0 0;
+}
+.hotelform .btn-default {
+    background: #b2b2b2 none repeat scroll 0 0;
+    color: #fff;
+    font-family: Montserrat-Reguler;
+    margin-top: 33px;
+    padding: 5px 15px;
+}
+.hoteltab {
+    margin-top: 30px;
+}
+.leftsidebar {
+    background: #f8f8f8 none repeat scroll 0 0;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.mainarea label {
+    color: #4c4c4c;
+    font-family: Montserrat-regular;
+    font-size: 13px;
+    font-weight: normal !important;
+    padding: 0 0 0 5px;
+}
