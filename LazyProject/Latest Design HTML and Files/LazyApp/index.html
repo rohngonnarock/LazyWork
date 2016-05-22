@@ -74,25 +74,25 @@
                 </ul>
 
                 <div class="tab-content">
-                    <div id="menu" class="tab-pane fade in active">
+                    <div id="menu" class="tab-pane  in active">
                         <form id='myform' method='POST' action='#'>
                             <div class="filter1">
                                 <div class="row search-bar">
                                     <div class="col-md-2 group-B">
                                         <div class="row">
-                                            <div class="col-md-4 col-sm-1 col-xs-4 box check-chkbx">
+                                            <div class="col-md-4 col-sm-1 col-xs-4  check-chkbx">
                                                 <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
                                                     <input id="checkbox01" type="checkbox" class="styled" checked="">
                                                     <label for="checkbox01" class="ico-plane"> <img src="images/spacer.png"> </label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4 col-sm-1 col-xs-4 box check-chkbx">
+                                            <div class="col-md-4 col-sm-1 col-xs-4  check-chkbx">
                                                 <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
                                                     <input id="checkbox02" type="checkbox" class="styled" checked="">
                                                     <label for="checkbox02" class="ico-hotel"> <img src="images/spacer.png"> </label>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4 col-sm-1 col-xs-4 box check-chkbx">
+                                            <div class="col-md-4 col-sm-1 col-xs-4  check-chkbx">
                                                 <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
                                                     <input id="checkbox03" type="checkbox" class="styled" checked="">
                                                     <label for="checkbox03" class="ico-car"> <img src="images/spacer.png"> </label>
@@ -100,9 +100,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="group-C col-md-3 col-xs-12">
+                                    <div class="group-C col-md-4 col-xs-12">
                                         <div class="row">
-                                            <div class="col-md-8 col-sm-4 col-xs-6 enter-price">
+                                            <div class="col-md-6 col-sm-4 col-xs-6 enter-price">
                                                 <div class="row ">
                                                     <div class="col-md-4 col-sm-4 col-xs-5 padZero">
                                                         <div class="row marginTop7 ">
@@ -122,7 +122,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-4 col-xs-6 select-month border_right">
+                                            <div class="col-md-3 col-xs-6 select-month border_right">
                                                 <div class="row">
                                                     <div class="input-group">
                                                         <span class="input-group-addon" id="basic-addon1"><img src="images/user.jpg" /></span>
@@ -133,27 +133,47 @@
                                                                 01
                                                                 <span class="caret"></span>
                                                             </div>
-                                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                            <ul class="dropdown-menu wide" aria-labelledby="dropdownMenu1">
                                                                 <li><a class="col-md-8" href="#">Adults (18-64)</a><input type="number" value="18" min="1" step="1" class="row col-md-4 numberField" /></li>
                                                                 <li><a class="col-md-8" href="#">Seniors (65+)</a><input type="number" value="65" min="1" step="1" class="row col-md-4 numberField" /></li>
                                                                 <li><a class="col-md-8" href="#">Children (&lt;1-17)</a><input type="number" value="14" min="1" step="1" class="row col-md-4 numberField" /></li>
                                                             </ul>
                                                         </div>
                                                     </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-xs-6 select-month border_right">
+                                                <div class="row">
+                                                    <div class="input-group">
+                                                        <!--<span class="input-group-addon" id="basic-addon1"><img src="images/user.jpg" /></span>-->
+                                                        <div class="dropdown">
 
+                                                            <div class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 
+                                                                2 Rooms
+                                                                <span class="caret"></span>
+                                                            </div>
+                                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                                <li><a class="col-md-12" href="#">1 Room</a></li>
+                                                                <li><a class="col-md-12" href="#">2 Rooms</a></li>
+                                                                <li><a class="col-md-12" href="#">3 Rooms</a></li>
+                                                                <li><a class="col-md-12" href="#">4 Rooms</a></li>
+                                                                <li><a class="col-md-12" href="#">5 Rooms</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="group-D col-md-4">
+                                    <div class="group-D col-md-3">
                                         <div class="row">
                                             <div class="col-md-6 col-sm-4 col-xs-6 select-month ">
                                                 <div class="row border_right">
                                                     <div class="input-group">
                                                         <span class="input-group-addon" id="addonDest2"><img src="images/marker.jpg" /></span>
-                                                        <input type="text" class="form-control" aria-describedby="addonDest2" placeholder="Enter city from">
+                                                        <input type="text" class="form-control" aria-describedby="addonDest2" placeholder="From">
                                                     </div>
                                                 </div>
                                             </div>
@@ -161,7 +181,7 @@
                                                 <div class="row border_right">
                                                     <div class="input-group">
                                                         <span class="input-group-addon" id="addonDest2"><img src="images/marker.jpg" /></span>
-                                                        <input type="text" class="form-control" aria-describedby="addonDest2" placeholder="Enter destination">
+                                                        <input type="text" class="form-control" aria-describedby="addonDest2" placeholder="To">
                                                     </div>
                                                 </div>
                                             </div>
@@ -199,34 +219,34 @@
                             </div>
                         </div>
                     </div>
-                    <div id="menu1" class="tab-pane fade">
+                    <div id="menu1" class="tab-pane ">
                         <div class="filter1">
                             <div class="row search-bar">
-                                <div class="col-md-3 group-B">
+                                <div class="col-md-2 group-B">
                                     <div class="row">
-                                        <div class="col-md-4 col-sm-1 col-xs-4 box check-chkbx">
+                                        <div class="col-md-4 col-sm-1 col-xs-4  check-chkbx">
                                             <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
-                                                <input id="checkbox04" type="checkbox" class="styled" checked="">
-                                                <label for="checkbox04" class="ico-plane"> <img src="images/spacer.png"> </label>
+                                                <input id="checkbox01" type="checkbox" class="styled" checked="">
+                                                <label for="checkbox01" class="ico-plane"> <img src="images/spacer.png"> </label>
                                             </div>
                                         </div>
-                                        <div class="col-md-4 col-sm-1 col-xs-4 box check-chkbx">
+                                        <div class="col-md-4 col-sm-1 col-xs-4  check-chkbx">
                                             <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
-                                                <input id="checkbox05" type="checkbox" class="styled" checked="">
-                                                <label for="checkbox05" class="ico-hotel"> <img src="images/spacer.png"> </label>
+                                                <input id="checkbox02" type="checkbox" class="styled" checked="">
+                                                <label for="checkbox02" class="ico-hotel"> <img src="images/spacer.png"> </label>
                                             </div>
                                         </div>
-                                        <div class="col-md-4 col-sm-1 col-xs-4 box check-chkbx">
+                                        <div class="col-md-4 col-sm-1 col-xs-4  check-chkbx">
                                             <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
-                                                <input id="checkbox06" type="checkbox" class="styled" checked="">
-                                                <label for="checkbox06" class="ico-car"> <img src="images/spacer.png"> </label>
+                                                <input id="checkbox03" type="checkbox" class="styled" checked="">
+                                                <label for="checkbox03" class="ico-car"> <img src="images/spacer.png"> </label>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="group-C col-md-3 col-xs-12">
+                                <div class="group-C col-md-4 col-xs-12">
                                     <div class="row">
-                                        <div class="col-md-8 col-sm-4 col-xs-6 enter-price">
+                                        <div class="col-md-6 col-sm-4 col-xs-6 enter-price">
                                             <div class="row ">
                                                 <div class="col-md-4 col-sm-4 col-xs-5 padZero">
                                                     <div class="row marginTop7 ">
@@ -246,7 +266,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-md-4 col-xs-6 select-month border_right">
+                                        <div class="col-md-3 col-xs-6 select-month border_right">
                                             <div class="row">
                                                 <div class="input-group">
                                                     <span class="input-group-addon" id="basic-addon1"><img src="images/user.jpg" /></span>
@@ -257,27 +277,47 @@
                                                             01
                                                             <span class="caret"></span>
                                                         </div>
-                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                        <ul class="dropdown-menu wide" aria-labelledby="dropdownMenu1">
                                                             <li><a class="col-md-8" href="#">Adults (18-64)</a><input type="number" value="18" min="1" step="1" class="row col-md-4 numberField" /></li>
                                                             <li><a class="col-md-8" href="#">Seniors (65+)</a><input type="number" value="65" min="1" step="1" class="row col-md-4 numberField" /></li>
                                                             <li><a class="col-md-8" href="#">Children (&lt;1-17)</a><input type="number" value="14" min="1" step="1" class="row col-md-4 numberField" /></li>
                                                         </ul>
                                                     </div>
                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6 select-month border_right">
+                                            <div class="row">
+                                                <div class="input-group">
+                                                    <!--<span class="input-group-addon" id="basic-addon1"><img src="images/user.jpg" /></span>-->
+                                                    <div class="dropdown">
 
+                                                        <div class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 
+                                                            2 Rooms
+                                                            <span class="caret"></span>
+                                                        </div>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                            <li><a class="col-md-12" href="#">1 Room</a></li>
+                                                            <li><a class="col-md-12" href="#">2 Rooms</a></li>
+                                                            <li><a class="col-md-12" href="#">3 Rooms</a></li>
+                                                            <li><a class="col-md-12" href="#">4 Rooms</a></li>
+                                                            <li><a class="col-md-12" href="#">5 Rooms</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="group-D col-md-4">
+                                <div class="group-D col-md-3">
                                     <div class="row">
                                         <div class="col-md-6 col-sm-4 col-xs-6 select-month ">
                                             <div class="row border_right">
                                                 <div class="input-group">
                                                     <span class="input-group-addon" id="addonDest2"><img src="images/marker.jpg" /></span>
-                                                    <input type="text" class="form-control" aria-describedby="addonDest2" placeholder="Enter city from">
+                                                    <input type="text" class="form-control" aria-describedby="addonDest2" placeholder="From">
                                                 </div>
                                             </div>
                                         </div>
@@ -285,15 +325,15 @@
                                             <div class="row border_right">
                                                 <div class="input-group">
                                                     <span class="input-group-addon" id="addonDest2"><img src="images/marker.jpg" /></span>
-                                                    <input type="text" class="form-control" aria-describedby="addonDest2" placeholder="Enter destination">
+                                                    <input type="text" class="form-control" aria-describedby="addonDest2" placeholder="To">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="group-E col-md-2">
+                                <div class="group-E col-md-3">
                                     <div class="row">
-                                        <div class="col-md-12 col-sm-4 col-xs-6 select-month ">
+                                        <div class="col-md-6 col-sm-4 col-xs-6 select-month ">
                                             <div class="row border_right">
                                                 <div class="input-group">
                                                     <span class="input-group-addon" id="addonDatePicker1"><img src="images/ca.jpg" /></span>
@@ -301,11 +341,20 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <!--<div class="col-md-6 col-sm-4 col-xs-6 select-month ">
+                                            <div class="row border_right">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon" id="addonDatePicker2"><img src="images/ca.jpg" /></span>
+                                                    <input type="text" class="form-control date-picker active" aria-describedby="addonDatePicker2" placeholder="Return date" id="date-picker-2" value="">
+                                                </div>
+                                            </div>
+                                        </div>-->
                                     </div>
                                 </div>
 
                             </div>
                         </div>
+
                         <div class="row buton">
                             <div class="col-md-12">
                                 <div class="button_area">
@@ -314,34 +363,34 @@
                             </div>
                         </div>
                     </div>
-                    <div id="menu2" class="tab-pane fade">
+                    <div id="menu2" class="tab-pane ">
                         <div class="filter1">
                             <div class="row search-bar">
-                                <div class="col-md-3 group-B">
+                                <div class="col-md-2 group-B">
                                     <div class="row">
-                                        <div class="col-md-4 col-sm-1 col-xs-4 box check-chkbx">
+                                        <div class="col-md-4 col-sm-1 col-xs-4  check-chkbx">
                                             <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
-                                                <input id="checkbox07" type="checkbox" class="styled" checked="">
-                                                <label for="checkbox07" class="ico-plane"> <img src="images/spacer.png"> </label>
+                                                <input id="checkbox01" type="checkbox" class="styled" checked="">
+                                                <label for="checkbox01" class="ico-plane"> <img src="images/spacer.png"> </label>
                                             </div>
                                         </div>
-                                        <div class="col-md-4 col-sm-1 col-xs-4 box check-chkbx">
+                                        <div class="col-md-4 col-sm-1 col-xs-4  check-chkbx">
                                             <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
-                                                <input id="checkbox08" type="checkbox" class="styled" checked="">
-                                                <label for="checkbox08" class="ico-hotel"> <img src="images/spacer.png"> </label>
+                                                <input id="checkbox02" type="checkbox" class="styled" checked="">
+                                                <label for="checkbox02" class="ico-hotel"> <img src="images/spacer.png"> </label>
                                             </div>
                                         </div>
-                                        <div class="col-md-4 col-sm-1 col-xs-4 box check-chkbx">
+                                        <div class="col-md-4 col-sm-1 col-xs-4  check-chkbx">
                                             <div class="checkbox checkbox-danger inline-block border-right mR10 pR10">
-                                                <input id="checkbox09" type="checkbox" class="styled" checked="">
-                                                <label for="checkbox09" class="ico-car"> <img src="images/spacer.png"> </label>
+                                                <input id="checkbox03" type="checkbox" class="styled" checked="">
+                                                <label for="checkbox03" class="ico-car"> <img src="images/spacer.png"> </label>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="group-C col-md-3 col-xs-12">
+                                <div class="group-C col-md-4 col-xs-12">
                                     <div class="row">
-                                        <div class="col-md-8 col-sm-4 col-xs-6 enter-price">
+                                        <div class="col-md-6 col-sm-4 col-xs-6 enter-price">
                                             <div class="row ">
                                                 <div class="col-md-4 col-sm-4 col-xs-5 padZero">
                                                     <div class="row marginTop7 ">
@@ -361,7 +410,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-md-4 col-xs-6 select-month border_right">
+                                        <div class="col-md-3 col-xs-6 select-month border_right">
                                             <div class="row">
                                                 <div class="input-group">
                                                     <span class="input-group-addon" id="basic-addon1"><img src="images/user.jpg" /></span>
@@ -372,27 +421,47 @@
                                                             01
                                                             <span class="caret"></span>
                                                         </div>
-                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                        <ul class="dropdown-menu wide" aria-labelledby="dropdownMenu1">
                                                             <li><a class="col-md-8" href="#">Adults (18-64)</a><input type="number" value="18" min="1" step="1" class="row col-md-4 numberField" /></li>
                                                             <li><a class="col-md-8" href="#">Seniors (65+)</a><input type="number" value="65" min="1" step="1" class="row col-md-4 numberField" /></li>
                                                             <li><a class="col-md-8" href="#">Children (&lt;1-17)</a><input type="number" value="14" min="1" step="1" class="row col-md-4 numberField" /></li>
                                                         </ul>
                                                     </div>
                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6 select-month border_right">
+                                            <div class="row">
+                                                <div class="input-group">
+                                                    <!--<span class="input-group-addon" id="basic-addon1"><img src="images/user.jpg" /></span>-->
+                                                    <div class="dropdown">
 
+                                                        <div class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 
+                                                            2 Rooms
+                                                            <span class="caret"></span>
+                                                        </div>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                            <li><a class="col-md-12" href="#">1 Room</a></li>
+                                                            <li><a class="col-md-12" href="#">2 Rooms</a></li>
+                                                            <li><a class="col-md-12" href="#">3 Rooms</a></li>
+                                                            <li><a class="col-md-12" href="#">4 Rooms</a></li>
+                                                            <li><a class="col-md-12" href="#">5 Rooms</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="group-D col-md-4">
+                                <div class="group-D col-md-3">
                                     <div class="row">
                                         <div class="col-md-6 col-sm-4 col-xs-6 select-month ">
                                             <div class="row border_right">
                                                 <div class="input-group">
                                                     <span class="input-group-addon" id="addonDest2"><img src="images/marker.jpg" /></span>
-                                                    <input type="text" class="form-control" aria-describedby="addonDest2" placeholder="Enter city from">
+                                                    <input type="text" class="form-control" aria-describedby="addonDest2" placeholder="From">
                                                 </div>
                                             </div>
                                         </div>
@@ -400,15 +469,15 @@
                                             <div class="row border_right">
                                                 <div class="input-group">
                                                     <span class="input-group-addon" id="addonDest2"><img src="images/marker.jpg" /></span>
-                                                    <input type="text" class="form-control" aria-describedby="addonDest2" placeholder="Enter destination">
+                                                    <input type="text" class="form-control" aria-describedby="addonDest2" placeholder="To">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="group-E col-md-2">
+                                <div class="group-E col-md-3">
                                     <div class="row">
-                                        <div class="col-md-12 col-sm-4 col-xs-6 select-month ">
+                                        <div class="col-md-6 col-sm-4 col-xs-6 select-month ">
                                             <div class="row border_right">
                                                 <div class="input-group">
                                                     <span class="input-group-addon" id="addonDatePicker1"><img src="images/ca.jpg" /></span>
@@ -416,21 +485,26 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <!--<div class="col-md-6 col-sm-4 col-xs-6 select-month ">
+                                            <div class="row border_right">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon" id="addonDatePicker2"><img src="images/ca.jpg" /></span>
+                                                    <input type="text" class="form-control date-picker active" aria-describedby="addonDatePicker2" placeholder="Return date" id="date-picker-2" value="">
+                                                </div>
+                                            </div>
+                                        </div>-->
                                     </div>
                                 </div>
 
                             </div>
                         </div>
+
                         <div id="Content"></div>
                         <div class="row buton">
                             <div class="col-md-12">
-                                <div class="col-md-3">
+                                <div class="button_area">
+                                    <button class="btn-danger search-book">Search & Book</button>
                                     <button type="button" class="btn btn-default addbtn">Add More</button>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="button_area1">
-                                        <button class="btn-danger search-book">Search & Book</button>
-                                    </div>
                                 </div>
                             </div>
                         </div>

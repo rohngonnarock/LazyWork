@@ -45,7 +45,7 @@ input[type=number]::-webkit-outer-spin-button {
     opacity: 1;
 }
 
-.dropdown-menu {
+.dropdown-menu.wide {
     min-width: 200px;
 }
 
@@ -53,9 +53,6 @@ input[type=number]::-webkit-outer-spin-button {
     margin-top: 7px;
 }
 
-.group-B {
-    margin-right: -1px;
-}
 
 
 /* Smartphones (portrait and landscape) ----------- */
